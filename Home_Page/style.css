@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+/* Add this to your main CSS file */
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    min-height: 100vh;
+    transition: 2s ease-in;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #121212;
+    background-image: url('../Welcome_Imgs/Universe.jpg'); /* Adjust the path if necessary */
+    background-size: initial;
+    z-index: -10;
+    overflow-x: hidden;
+}
+
+.spacer {
+    height: 900px;
+    width: 100%;
+    border-top: #ffffff;
+}
+
+.nav-bar {
+    position: fixed;
+    height: 100vh;
+    width: 100px; /* Initial width */
+    background-color:  rgba(0, 0, 0, 0.333); /* Initial transparency */
+    transition: width 0.5s ease-in-out, background-color 0.5s ease; /* Smooth transition */
+    overflow: hidden;
+    top: 10px;
+    z-index: 2000; /* To appear on top of the main content */
+    box-shadow: none; /* Initially no shadow */
+    border: none;
+}
+
+.nav-bar:hover {
+    width: 170px; /* Expand width on hover */
+    background-color: rgba(0, 0, 0, 0.922); /* Slightly less transparent on hover */
+    box-shadow: 
+            0 0 100px rgb(0, 0, 0),   /* Close, stronger shadow */
+            0 0 300px rgba(0, 0, 0, 0.927),   /* Mid-range, fading shadow */
+            0 0 600px rgba(0, 0, 0, 0.856),   /* Farther, slightly weaker shadow */
+            0 0 1000px rgba(0, 0, 0, 0.753),
+            0 0 2000px rgba(0, 0, 0, 0.696);  /* Even farther, still visible */
+}
+.subscription {
+    width: 100%;
+    height: 80px; /* Adjust height */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 2px 0px 4px white;
+}
+
+.subscription h3{
+    font-size: 18px;
+    text-shadow: 0 0 10px #FF69B4,0 0 20px #FF69B4, 0 0 30px #8A2BE2, 0 0 40px #8A2BE2;
+    animation: glow-text 1s infinite alternate;
+}
+
+.nav-bar .menu ul {
+    list-style: none; /* To Remove all styling from list e.g., bullet points etc*/
+    padding-left: 0;
+    margin-top: 20px; /* Space below subscription */
+}
+
+.nav-bar .menu li img {
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.nav-bar .menu li {
+    margin-top: 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    transition: all 0.9s ease;
+    background: none; /* Ensure no background color */
+}
+
+.nav-bar .menu li i {
+    color: white;
+    font-size: 25px;
+    margin-right: 10px;
+    min-width: 30px; /* Ensure enough space for the icons */
+    text-align: center; /* Center the icons */
+    opacity: 0.6;
+}
+
+.nav-bar .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    white-space: nowrap;
+    display: none;
+    transition: all 0.9s ease;
+    opacity: 0.6;
+    text-shadow: 0 0 10px #FF69B4, 0 0 30px #8A2BE2;
+    animation: glow-text 2s infinite alternate;
+}
+
+@keyframes glow-text{
+    0%{
+        text-shadow: 0 0 10px #FF69B4, 0 0 20px #8A2BE2;
+    }
+
+    100%{
+        text-shadow: 0 0 20px #8A2BE2, 0 0 30px #FF69B4;
+    }
+}
+
+.nav-bar:hover .menu a {
+    display: inline-block;
+}
+.nav-bar .menu li:hover a{
+    opacity: 1;
+    font-size: 22px;
+}
+
+.nav-bar .menu li:hover i {
+    color: white; /* Change color on hover */
+    opacity: 1;
+    font-size: 30px;
+    filter: brightness(3); /* Brighten the icon */
+     /* Add glow effect */
+}
+
+/* Main Box */
+
+.main-content {
+    min-height: 100%;
+    width: 100%;
+    flex: 1;
+    background-color: #121212;
+    background-image: url('../Welcome_Imgs/Universe.jpg'); /* Adjust the path if necessary */
+    /* The `background-size: cover;` property in CSS ensures that the background image covers the
+    entire area of the element to which it is applied. This means that the image will be scaled
+    proportionally to cover the entire background area, even if it has to be cropped or stretched.
+    It helps in maintaining the aspect ratio of the image while covering the background completely. */
+    /* background-size: cover; Ensures the image covers the entire area */
+    /* background-position: center center; Centers the image */
+    
+}
+
+
+.banner {
+    height: 40vh;
+    width: 165vh;
+    margin: 16px 0px 0px 10px;
+    padding: 0px 48px 0px 0px;
+    position: relative;
+    left: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #21212176;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 30%;
+    z-index: 1000;
+}
+
+.video-banner {
+    height: 40vh;
+    width: 80vh;
+    margin-left: 0px;
+    background-image: url(../Welcome_Imgs/Home_RJTV.gif);
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    background-size: cover;
+    animation: pulse-glow 2s infinite alternate;
+    z-index: 1000;
+}
+
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 10px #39ff14, 0 0 15px #8a2be2, 0 0 20px #00ffff;
+        background-color: #1a0033;
+        border-color: #39ff14;
+    }
+    50% {
+        box-shadow: 0 0 20px #00ffff, 0 0 30px #8a2be2, 0 0 40px #39ff14;
+        background-color: #330066;
+        border-color: #00ffff;
+    }
+    100% {
+        box-shadow: 0 0 15px #8a2be2, 0 0 25px #00ffff, 0 0 35px #39ff14;
+        background-color: #1a0033;
+        border-color: #8a2be2;
+    }
+}
+
+
+.banner-text {
+    height: 40vh;
+    width: 60vh;
+    margin-left: 40px;
+    padding: 20px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    height: 30vh;
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    animation: text-glow 2s infinite alternate;
+    top: 5px;
+    left: 0px;
+}
+
+@keyframes text-glow {
+    0% {
+        text-shadow: 0 0 10px #00FF00, 0 0 20px #00FFFF;
+    }
+    100% {
+        text-shadow: 0 0 15px #00FFFF, 0 0 25px #00FF00;
+    }
+}
+
+.upgrade {
+    height: 15vh;
+    width: 100%;
+}
+
+.upgrade-btn {
+    height: 10vh;
+    width: 100%;
+}
+
+.upgrade-btn button {
+    background-color: #32CD32; /* Lime green background */
+    color: black; /* Button text color */
+    border: 2px solid #32CD32; /* Outline with lime green */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 18px;
+    word-spacing: 10px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #32CD32; /* Text glow */
+    box-shadow: 0 0 10px rgba(50, 205, 50, 0.6), 0 0 15px rgba(50, 205, 50, 0.7); /* Green glow effect */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.upgrade-btn button:hover {
+    background-color: #39FF14; /* Neon green on hover */
+    box-shadow: 0 0 15px white, 0 0 25px #39FF14; /* Enhanced glow on hover */
+    text-shadow: 2px 2px 5px #121212;
+    border-color: #39FF14; /* Change outline to neon green */
+}
+
+.form-switch {
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+    color: white;
+    top: 270px;
+    animation: text-glow2 2s infinite alternate;
+    background-color: #212121a9;
+    padding: 0px 0px 0px 10px;
+    border-radius: 20%;
+}
+
+@keyframes text-glow2 {
+    0% {
+        text-shadow: 0 0 10px #1E90FF, 0 0 20px #00BFFF;
+    }
+    100% {
+        text-shadow: 0 0 15px #00BFFF, 0 0 25px #1E90FF;
+    }
+}
+
+.form-check {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form-check-label {
+    margin-right: 100px; /* Adds some space between the label and the switch */
+}
+
+@media (min-height: 762px) and (max-width: 1012px) {
+    .banner {
+        height: 25vh;
+        width: 95vh;
+        margin: 12px 0px 0px 10px;
+        padding: 0px 30px 0px 0px;
+        position: relative;
+        left: 190px;
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    
+    .video-banner {
+        height: 25vh;
+        width: 45vh;
+    }
+
+    .banner-text {
+        height: 25vh;
+        width: 30vh;
+        margin-left: 20px;
+        padding: 10px 8px;
+    }
+    .text {
+        height: 15vh;
+        width: 30vh;
+        font-size: 1rem;
+    }
+    .upgrade {
+        height: 7.5vh;
+        width: 100%;
+    }
+    
+    .upgrade-btn {
+        height: 5vh;
+        width: 100%;
+    }
+}
+
+@media (min-height: 654px) and (max-width: 762px) {
+    .banner {
+        height: 10vh;
+        width: 45vh;
+        margin: 6px 0px 0px 10px;
+        padding: 0px 15px 0px 0px;
+        position: relative;
+        left: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    
+    .video-banner {
+        height: 13vh;
+        width: 23vh;
+    }
+
+    .banner-text {
+        height: 13vh;
+        width: 15vh;
+        margin-left: 10px;
+        padding: 5px 4px;
+    }
+    .text {
+        height: 7.5vh;
+        width: 15vh;
+        font-size: 0.6rem;
+    }
+    .upgrade {
+        height: 3vh;
+        width: 100%;
+    }
+    
+    .upgrade-btn {
+        height: 1vh;
+        width: 100%;
+    }
+}
+
+@media (min-height: 375px) and (max-width: 654px) {
+    .banner {
+        height: 10vh;
+        width: 30vh;
+        left: 70px;
+    }
+    
+    .video-banner {
+        display: none;
+    }
+
+    .banner-text {
+        height: 13vh;
+        width: 15vh;
+        margin-left: 10px;
+        padding: 5px 4px;
+    }
+    .text {
+        height: 7.5vh;
+        width: 15vh;
+        font-size: 0.6rem;
+    }
+    .upgrade {
+        height: 3vh;
+        width: 100%;
+    }
+    
+    .upgrade-btn {
+        height: 1vh;
+        width: 100%;
+    }
+}
+
+/* Upgrade Button Responsiveness */
+@media (max-width: 768px) {
+    .upgrade-btn button {
+        padding: 8px 16px;
+        font-size: 16px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .upgrade-btn button {
+        padding: 6px 12px;
+        font-size: 14px;
+        width: 85%;
+    }
+}
+
+@media (max-width: 375px) {
+    .upgrade-btn button {
+        padding: 4px 8px;
+        font-size: 12px;
+        width: 80%;
+    }
+}

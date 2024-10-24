@@ -1,0 +1,220 @@
+body {
+    background-color: black;
+    background-image: url('./Welcome_Imgs/Universe.jpg');
+    background-size: contain; /* Ensures the background image covers the entire body */
+    background-position: center;
+    margin: 0; /* Remove default body margin */
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+header{
+    margin-left: 20px;
+    width: 40.0%;
+    background-color: black; /* Optional: Add a background color */
+    position: fixed;
+    /* text-align: center; */
+    z-index: 1;
+    
+}
+h1{
+    color: white;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-shadow: 0 0 10px #FF69B4,0 0 20px #FF69B4, 0 0 30px #8A2BE2, 0 0 40px #8A2BE2;
+    text-align: center;
+}
+
+.banner2{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 10px;
+    padding-left: 20px; */
+
+}
+
+li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vh;
+    opacity: 0.8;
+    color: rgb(140, 183, 221);
+    z-index: 0; /* Add this to ensure li is behind the h1 */
+}
+ol {
+    max-width: 2000px; /* Set a maximum width for the ordered list */
+}
+
+.list-heading ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    max-width: 1250px; /* Ensure the inner list doesn't exceed a set width */
+    word-wrap: break-word; /* Break long words to prevent overflow */
+}
+
+
+.banner {
+    margin: 20px auto; /* Center the banner */
+    margin-left: 10px;
+    max-width: 100%; /* Use a percentage for responsiveness */
+    display: flex;
+    flex-direction: row; /* Stack items vertically */
+    /* border: 5px solid black; */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+    transition: 1s ease;
+    z-index: 1000;
+}
+
+.banner-img {
+    border-radius: 25px;
+    height: 400px; /* Fixed height for larger screens */
+    width: 100%; /* Use full width */
+    background-image: url(./Welcome_Imgs/welcomeRJTV.gif);
+    background-size: cover; /* Cover the entire div */
+    background-position: center;
+    box-shadow: 0 0 15px #8A2BE2, 0 0 30px #FF69B4;
+    animation: pulse-glow 2s infinite alternate;
+}
+
+.banner-text {
+    border-radius: 22px;
+    /* margin-top: 10px;  */
+    height: 300px; /* Adjust height automatically */
+    width: 100%; /* Use full width */
+    overflow: auto; /* Ensure text is scrollable if needed */
+    /* padding: 20px; Add padding for better readability */
+    padding-top: 0px;
+    padding-left: 10px;
+     /* Slight background for contrast */
+}
+
+.list-heading {
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.btn {
+    position: relative;
+    bottom: 20px;
+    padding: 10px 100px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s ease;
+}
+
+.form-check {
+    position: absolute;
+    margin-left: 10px;
+}
+
+#flexCheckDefault:checked + label .btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 10px #FF69B4, 0 0 20px #8A2BE2;
+    }
+    100% {
+        box-shadow: 0 0 30px #8A2BE2, 0 0 40px #FF69B4;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column; /* Stack items vertically */
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+
+    h1{
+        margin-top: 30px;
+    }
+    .banner-img {
+        height: 300px; /* Adjust height for smaller screens */
+        width: 100%; /* Ensure full width */
+    }
+
+    .banner-text {
+        padding: 10px; /* Less padding for smaller screens */
+        width: 100%; /* Full width */
+    }
+
+    li {
+        font-size: 2.4vh; /* Adjust font size for readability */
+    }
+
+    .btn {
+        padding: 5px 50px; /* Smaller button for mobile */
+        left: 0;
+    }
+}
+
+/*Style for loader page*/
+
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 14); /* Match loader background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it appears above everything */
+}
+
+.loader .text {
+    position: absolute;
+    font-family: 'Protest Guerrilla';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 14); /* Slightly transparent background */
+    padding: 20px;
+    font-size: 34px;
+    border-radius: 50% ;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    z-index: 1;
+    animation: glow-text 2s infinite alternate;
+}
+
+@keyframes glow-text{
+    0%{
+        text-shadow: 0 0 20px #FF69B4, 0 0 30px #8A2BE2;
+    }
+
+    100%{
+        text-shadow: 0 0 30px #8A2BE2, 0 0 40px #FF69B4;
+    }
+}
+
+.loader img {
+    width: 800px;
+    height: 585px;
+    display: block;
+}
+
+.dots::after {
+    content: ''; /* Initially no dots */
+    animation: dotAnimation 1.5s infinite steps(1);
+}
+
+@keyframes dotAnimation {
+    0% { content: ''; }          /* No dots */
+    25% { content: '.'; }        /* One dot */
+    50% { content: '..'; }       /* Two dots */
+    75% { content: '...'; }      /* Three dots */
+    100% { content: ''; }        /* Reset to no dots */
+}
+

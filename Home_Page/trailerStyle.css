@@ -1,0 +1,464 @@
+.trailer {
+    width: 91.4%; /* or specific width like 500px */
+    max-width: 1280px; /* Ensures the video doesn't exceed this size */
+    height: 100%; /* Ensures the height is proportional to the width */
+    /* overflow: hidden; */
+    margin-top: 70px;
+    /* background-color: white; */
+    position: relative;
+    margin-left: 100px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    animation: trailer-glow 2s infinite alternate;
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+}
+
+h1 {
+    color: white;
+}
+
+@keyframes trailer-glow {
+    0% {
+        box-shadow: 0 0 10px #ff00ff, 0 0 20px #9400d3, 0 0 30px #4b0082;
+        background-color: #1a0033;
+        border-color: #ff00ff;
+    }
+    50% {
+        box-shadow: 0 0 20px #ff1493, 0 0 30px #8a2be2, 0 0 40px #00ced1;
+        background-color: #330066;
+        border-color: #ff1493;
+    }
+    100% {
+        box-shadow: 0 0 15px #00ced1, 0 0 25px #ff00ff, 0 0 35px #9400d3;
+        background-color: #1a0033;
+        border-color: #ff00ff;
+    }
+}
+
+.trailer video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Ensures no extra margins */
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    z-index: 200;
+}
+
+.fa-volume-high, .fa-volume-xmark {
+    position: absolute;
+    bottom: 30px; /* Adjust as necessary */
+    right: 20px; /* Adjust as necessary */
+    font-size: 24px; /* Adjust size as needed */
+    color: white; /* Color of the icons */
+    z-index: 10;
+}
+
+.trailer-text {
+    height: 70%; /* Height of the trailer text */
+    width: 45%; /* Width of the trailer text */
+    position: absolute;
+    bottom: 0; /* Position at the bottom of the parent */
+    left: 0px; /* Position from the left side */
+    bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Evenly space the children */
+    color: white;
+    opacity: 0.7;
+    text-shadow: 0 0 4px black;
+    transition: opacity 0.8s ease-in-out; /* Smooth transition for opacity */
+    z-index: 1000;
+}
+
+.trailer-text:hover{
+    opacity: 1;
+    filter: brightness(1);
+    
+    animation: text-glow 2s infinite alternate;
+}
+
+.trailer-text img {
+    height: 20vh;
+    width: 50vh;
+    display: block;
+}
+
+.trailer-text p {
+    font-size: 1.4rem;
+    line-height: 30px;
+}
+
+.trailer-text ul {
+    list-style: disc; /* Ensures bullet points */
+    padding-left: 20px; /* Adds some padding for the bullets to be visible */
+}
+
+.trailer-text li {
+    display: list-item; /* Makes sure the bullet is shown */
+    float: left; /* This will place the items inline while keeping bullets */
+    margin-right: 20px; /* Space between the list items */
+}
+
+li .badge {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px 15px; /* Adjust padding to make it wider */
+    font-size: 1rem; /* Optional: Adjust font size if needed */
+    word-spacing: 10px;
+    border-radius: 5px; /* Optional: Adjust border radius for rounded corners */
+    text-shadow: 0 0 10px black;
+}
+
+.trailer-descripton {
+    flex: 1; /* This allows the description to take available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Evenly space content within */
+}
+
+.text-btn {
+    display: flex; /* Align buttons in a row */
+    justify-content: flex-start; /* Align buttons to the start */
+    padding: 10px 0; /* Padding on top and bottom */
+}
+
+.text-btn button {
+    border-radius: 10px; /* Rounded corners for buttons */
+    height: 50px; /* Set a fixed height for buttons */
+    margin-right: 10px; /* Space between buttons */
+    font-size: 1rem; /* Consistent font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+#Watch_Btn {
+    background-color: #6c757d; /* Grey background */
+    color: white; /* White text color */
+    flex: 1; /* Allow the watch button to take available space */
+    font-size: 1.3rem;
+}
+
+#plus_btn {
+    color: white; /* White text color */
+    padding: 0 20px; /* Add horizontal padding for the plus button */
+    font-size: 1.5rem; /* Increase font size for the plus icon */
+    display: flex; /* Center icon */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Add hover effect for buttons */
+.text-btn button:hover {
+    opacity: 0.9; /* Slightly increase opacity on hover */
+}
+
+/* Content */
+h2 {
+    font-size: 2rem;
+    color: white;
+    position: relative; /* Change to relative */
+    left: 100px; /* Keep this if you want it offset from the left */
+    z-index: 1;
+    width: 90%;
+    margin-bottom: 10px; /* Add margin to separate from the posters */
+}
+
+.posters {
+    width: 91.5%;
+    height: 250px;
+    position: relative;
+    left: 100px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.card {
+    width: 180px; /* Fixed width for cards */
+    height: 230px; /* Fixed height for cards */
+    margin-right: 10px; /* Space between cards */
+    /* border-radius: 5%; */
+    transition: 1s ease-in;
+    cursor: pointer;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 0 10px #FFFFFF, 0 0 15px #194e63;
+}
+
+.card img{
+    object-fit: cover;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+
+}
+
+#Cards_Watch_Btn {
+    position: absolute;
+    bottom: 0; /* Positions the button at the base of the div */
+    left: 50%; /* Centers the button horizontally */
+    transform: translateX(-50%); /* Ensures the button is perfectly centered */
+    width: 76%; /* Adjust the width of the button */
+    
+    z-index: 1; /* Ensures the button stays above the image */
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Adds semi-transparent background */
+    color: white; /* Button text color */
+    padding: 5px 0; /* Button padding */
+    border-radius: 5px; /* Optional: Rounded corners */
+    text-align: center;
+    font-size: 1rem;
+    display: none;
+    transition: 0.5s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.08);
+    z-index: 200;
+    box-shadow: 0 10px 25px #6708c6;
+}
+
+.card:hover #Cards_Watch_Btn {
+    display: block;
+}
+
+#Cards_Watch_Btn:hover{
+    background-color: white;
+    color: black;
+}
+
+h5 {
+    font-size: 1rem;
+    color: wheat;
+    position: absolute; /* Change to relative */
+    right: 40px; /* Keep this if you want it offset from the left */
+    z-index: 1;
+    opacity: 0.7;
+    margin-bottom: 10px; /
+}
+
+h5:hover{
+    opacity: 1;
+    color: chartreuse;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #121212cc;
+    color: white;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px; /* Ensure footer sticks to the bottom */
+    z-index: 1000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #555;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo-section h3 {
+    font-size: 1.8rem;
+    color: #ff00ff; /* Match your glow theme */
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff00ff; /* Hover color for links */
+}
+
+.social-section a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+}
+
+.social-section a:hover {
+    color: #ff00ff; /* Hover color for social icons */
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #222;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1012px) {
+    .trailer{
+        width: 90%; /* or specific width like 500px */
+        height: 80%;
+    }
+    .trailer-text {
+        height: 60%; /* Height of the trailer text */
+        width: 50%; /* Width of the trailer text */
+        /* bottom: 8%; */
+    }
+    .trailer-text img {
+        height: 10vh;
+        width: 25vh;
+        display: block;
+    }
+    
+    .trailer-text p {
+        font-size: 1rem;
+        line-height: 15px;
+    }
+    .form-check{
+        display: none;
+    }
+}
+
+@media (min-height: 654px) and (max-width: 762px) {
+        .trailer{
+        width: 100%; /* or specific width like 500px */
+        height: auto;
+        border-radius: 0;
+    }
+    .trailer-text {
+        height: 30vh; /* Height of the trailer text */
+        width: 50vh; /* Width of the trailer text */
+        position: absolute;
+        left: 0px; /* Position from the left side */
+        bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Evenly space the children */
+        color: white;
+        opacity: 0.7;
+        text-shadow: 0 0 4px black;
+        transition: opacity 0.8s ease-in-out; /* Smooth transition for opacity */
+        z-index: 1000;
+    }
+    .trailer-text img {
+        height: 7vh;
+        width: 14vh;
+        display: block;
+    }
+    
+    .trailer-text p {
+        font-size: 0.8rem;
+        line-height: 15px;
+    }
+    .form-check{
+        display: none;
+    }
+}
+
+@media (min-height: 375px) and (max-width: 654px) {
+    .trailer{
+    width: 100%; /* or specific width like 500px */
+    height: auto;
+    border-radius: 0;
+    margin-left: 10px;
+}
+.trailer-text {
+    height: 20vh; /* Height of the trailer text */
+    width: 40vh; /* Width of the trailer text */
+}
+.trailer-text img {
+    display: block;
+}
+
+.trailer-text p {
+    display: block;
+}
+
+.text-btn button {
+    height: 30px; /* Set a fixed height for buttons */
+    font-size: 0.7rem; /* Consistent font size */
+}
+
+#Watch_Btn {
+    font-size: 1rem;
+}
+
+#plus_btn {
+    font-size: 1.2rem; /* Increase font size for the plus icon */
+}
+
+.trailer-text ul {
+    display: none;
+}
+
+.posters{
+    left: 70px;
+}
+h2{
+    left: 70px;
+}
+h5{
+    right: 90px;
+}
+.card {
+    width: 80px; /* Fixed width for cards */
+    height: 130px; /* Fixed height for cards */
+    margin-right: 10px; /* Space between cards */
+}
+.card img{
+    width: 80px; /* Fixed width for cards */
+    height: 130px; /* Fixed height for cards */
+}
+#card4{
+    display: none;
+}
+#card5{
+    display: none;
+}
+#card6{
+    display: none;
+}
+.nav-bar {
+    height: 100vh;
+    width: 80px; /* Initial width */
+}
+.form-check{
+    display: none;
+}
+}
+

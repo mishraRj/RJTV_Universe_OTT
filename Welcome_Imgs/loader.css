@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 14);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loader {
+    position: relative;
+    display: inline-block;
+}
+
+img {
+    width: 800px;
+    height: 585px;
+    display: block;
+}
+
+.text {
+    position: absolute;
+    font-family: 'Protest Guerrilla';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 14); /* Slightly transparent background */
+    padding: 20px;
+    font-size: 34px;
+    border-radius: 50% ;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    z-index: 1;
+    animation: glow-text 2s infinite alternate;
+}
+
+@keyframes glow-text{
+    0%{
+        text-shadow: 0 0 20px #FF69B4, 0 0 30px #8A2BE2;
+    }
+
+    100%{
+        text-shadow: 0 0 30px #8A2BE2, 0 0 40px #FF69B4;
+    }
+}
+.dots::after {
+    content: ''; /* Initially no dots */
+    animation: dotAnimation 1.5s infinite steps(1);
+}
+
+@keyframes dotAnimation {
+    0% { content: ''; }          /* No dots */
+    25% { content: '.'; }        /* One dot */
+    50% { content: '..'; }       /* Two dots */
+    75% { content: '...'; }      /* Three dots */
+    100% { content: ''; }        /* Reset to no dots */
+}

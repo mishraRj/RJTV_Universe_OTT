@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJTV: Watch & Explore in Style</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./home_stars.css">
+    <link rel="stylesheet" href="trailerStyle.css">
+    <link rel="stylesheet" href="./SpaceSHips/homeAliens.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../Welcome_Imgs/logo.png">
+</head>
+<body> 
+        <div class="nav-bar">
+            <div class="subscription">
+                <h3>RJTV UNIVERSE</h3>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <img src="../Welcome_Imgs/logo.png" alt="">
+                        <a href="#" style="animation: text-glow 2s infinite alternate;">My space</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-home" style="opacity: 2;"></i>
+                        <a href="#" style="opacity: 2;">Home</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="./construction.html" target="_blank">Search</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-tv"></i>
+                        <a href="./construction.html" target="_blank">TV</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clapperboard"></i>
+                        <a href="./construction.html" target="_blank">Movies</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-layer-group"></i>
+                        <a href="./Genre_Page/RJTV_Channels.html">Categories</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="banner">
+                <div class="video-banner"></div>
+                <div class="banner-text">
+                    <div class="text">
+                        <div class="upgrade">
+                            <p>Upgrade to Pro for exclusive content!</p>
+                        </div>
+                        <div class="upgrade-btn">
+                            <a href="./construction.html" target="_blank">
+                                <button 
+                                    type="button" class="btn rounded-pill btn-outline-success">Upgrade++
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckChecked" id="switchLabel" style="z-index: 1000;">
+                    Turn off the Video
+                </label>
+                <input class="form-check-input" type="checkbox" role="switch"style="z-index: 1000;" id="flexSwitchCheckChecked" checked>
+            </div>
+            <div class="trailer" id="trailer-container">
+                <video id="trailerVid" autoplay muted>
+                    <source id="video-source" src="./Trailers/Home_Trailers/Trailer2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <i class="fa-solid fa-volume-high" id="volumeIcon" style="display: none; cursor: pointer; z-index: 300;"></i>
+                <i class="fa-solid fa-volume-xmark" id="muteIcon" style="cursor: pointer; z-index: 300"></i>
+
+                <!--Video Text-->
+                
+                <div class="trailer-text" id="tr1" style="display: none;">
+                    <div class="trailer-descripton">
+                            <img src="./Trailers/Trailer_Texts/RadhaKrishna.png" alt="img">
+                        <ul>
+                            <li>2023</li>
+                            <li>Hindi</li>
+                            <li><span class="badge text-bg-secondary">U/A 13+</span></li>
+                        </ul>
+                        <br>
+                        <p>Lord Krishna and Radha share pure love for one another but things take a turn when
+                            Radha receives a curse that she will be separated from him.</p>
+
+                        <p>Mythology | Dramedy | Period | Drama</p>
+                    </div>
+
+                    <div class="text-btn">
+                            <button class="btn btn-secondary"id = "Watch_Btn" type="button">Watch now</button>
+                            <button class="btn btn-secondary"id = "plus_btn" type="button">+</button>
+                    </div>
+                </div>
+                <!-- Trailer two -->
+                <div class="trailer-text" id="tr2" style="display: none;">
+                    <div class="trailer-descripton">
+                            <img src="./Trailers/Trailer_Texts/DBS.png" alt="img">
+                        <ul>
+                            <li>2015</li>
+                            <li>2 Seasons</li>
+                            <li>3 Languages</li>
+                            <li><span class="badge text-bg-secondary">TV-14</span></li>
+                        </ul>
+                        <br>
+                        <p>After waking up from decades of slumber, Beerus, the god of destruction,
+                            wants to defeat Goku, the Super Saiyan God, whom he had seen in his sleep.
+                            Goku fights with him to save earth.</p>
+
+                        <p>Adventure | Action | Shonen</p>
+                    </div>
+
+                    <div class="text-btn">
+                            <button class="btn btn-secondary"id = "Watch_Btn" type="button">Watch now</button>
+                            <button class="btn btn-secondary"id = "plus_btn" type="button">+</button>
+                    </div>
+                </div>
+                <!-- Trailer three -->
+                <div class="trailer-text" id="tr3" style="display: none;">
+                    <div class="trailer-descripton">
+                            <img src="./Trailers/Trailer_Texts/Stree2.png" alt="img">
+                        <ul>
+                            <li>2024</li>
+                            <li>Hindi</li>
+                            <li><span class="badge text-bg-secondary">U/A-12</span></li>
+                        </ul>
+                        <br>
+                        <p style="font-size: 1.05rem;">The town of Chanderi is being haunted again.
+                            This time, women are mysteriously abducted by a terrifying headless entity.
+                            Once again, it's up to Vicky and his friends to save their town and loved ones.</p>
+
+                        <p>Horror | Comedy</p>
+                    </div>
+
+                    <div class="text-btn">
+                            <button class="btn btn-secondary"id = "Watch_Btn" type="button">Watch now</button>
+                            <button class="btn btn-secondary"id = "plus_btn" type="button">+</button>
+                    </div>
+                </div>
+                <!-- Trailer four -->
+                <div class="trailer-text" id="tr4" style="display: none;">
+                    <div class="trailer-descripton">
+                            <img src="./Trailers/Trailer_Texts/GvsK.png" alt="img">
+                        <ul>
+                            <li>2021</li>
+                            <li>2 Languages</li>
+                            <li><span class="badge text-bg-secondary">PG-13</span></li>
+                        </ul>
+                        <br>
+                        <p style="font-size: 1.05rem;">King Kong is transported out of his containment zone after Godzilla resurfaces and creates mayhem.
+                            Humans need his help to reach Hollow Earth and find a way to subdue the king of the
+                            monsters.</p>
+
+                        <p>Adventure | Fantasy | Sci-fi</p>
+                    </div>
+
+                    <div class="text-btn">
+                            <button class="btn btn-secondary"id = "Watch_Btn" type="button">Watch now</button>
+                            <button class="btn btn-secondary"id = "plus_btn" type="button">+</button>
+                    </div>
+                </div>
+                <!-- Trailer five -->
+                <div class="trailer-text" id="tr5" style="display: none;">
+                    <div class="trailer-descripton">
+                            <img src="./Trailers/Trailer_Texts/One Piece.png" alt="img">
+                        <ul>
+                            <li>1999</li>
+                            <li>20 Seasons</li>
+                            <li>2 Languages</li>
+                            <li><span class="badge text-bg-secondary">TV-14</span></li>
+                        </ul>
+                        <br>
+                        <p>A young pirate captain and his crew's quest to find the legendary treasure,
+                            "One Piece", and become the Pirate King</p>
+
+                        <p>Adventure | Fantasy | Shonen</p>
+                    </div>
+
+                    <div class="text-btn">
+                            <button class="btn btn-secondary"id = "Watch_Btn" type="button">Watch now</button>
+                            <button class="btn btn-secondary"id = "plus_btn" type="button">+</button>
+                    </div>
+                </div>
+                <!-- Trailer eight -->
+                <div class="trailer-text" id="tr8" style="display: none;">
+                    <div class="trailer-descripton">
+                            <img src="./Trailers/Trailer_Texts/Mahabhart.png" alt="img">
+                        <ul>
+                            <li>2013</li>
+                            <li>28 Seasons</li>
+                            <li>Hindi</li>
+                            <li><span class="badge text-bg-secondary">U/A-13+</span></li>
+                        </ul>
+                        <br>
+                        <p>The noble Pandavas and their scheming cousins, the Kaurava kings,
+                            go up against each other to inherit the Hastinapur throne.
+                            Krishna lends his powers to help the Pandavas in the war.</p>
+
+                        <p>History | Drama</p>
+                    </div>
+
+                    <div class="text-btn">
+                            <button class="btn btn-secondary"id = "Watch_Btn" type="button">Watch now</button>
+                            <button class="btn btn-secondary"id = "plus_btn" type="button">+</button>
+                    </div>
+                </div>
+                
+                <!-- Trailer nine -->
+                <div class="trailer-text" id="tr9" style="display: none;">
+                    <div class="trailer-descripton">
+                            <img src="./Trailers/Trailer_Texts/AOT.png" alt="img">
+                        <ul>
+                            <li>2013</li>
+                            <li>4 Seasons</li>
+                            <li>2 Languages</li>
+                            <li><span class="badge text-bg-secondary">TV-14</span></li>
+                        </ul>
+                        <br>
+                        <p>Humankind constructs lofty walls to safeguard itself from immense creatures, the Titans.
+                            It battles to regain its land captured by the Titans which is not easy.</p>
+
+                        <p>Action | Fantasy | Fiction</p>
+                    </div>
+
+                    <div class="text-btn">
+                            <button class="btn btn-secondary"id = "Watch_Btn" type="button">Watch now</button>
+                            <button class="btn btn-secondary"id = "plus_btn" type="button">+</button>
+                    </div>
+                </div>
+                <!-- Trailer ten -->
+                <div class="trailer-text" id="tr10" style="display: none;">
+                    <div class="trailer-descripton">
+                            <img src="./Trailers/Trailer_Texts/Mahadev.webp" alt="img">
+                        <ul>
+                            <li>2011</li>
+                            <li>36 Seasons</li>
+                            <li>Hindi</li>
+                            <li><span class="badge text-bg-secondary">U/A-13</span></li>
+                        </ul>
+                        <br>
+                        <p>Lord Shiva, an ascetic, and his divine consort, Goddess Shakti, create the universe.
+                            However, they separate for the sake of it and are reunited when she is reincarnated as Goddess Parvati.</p>
+
+                        <p>Drama | Mythology</p>
+                    </div>
+
+                    <div class="text-btn">
+                            <button class="btn btn-secondary"id = "Watch_Btn" type="button">Watch now</button>
+                            <button class="btn btn-secondary"id = "plus_btn" type="button">+</button>
+                    </div>
+                </div>
+                <!-- Trailer eleven -->
+                <div class="trailer-text" id="tr11" style="display: none;">
+                    <div class="trailer-descripton">
+                            <img src="./Trailers/Trailer_Texts/NWH.png" alt="img">
+                        <ul>
+                            <li>2021</li>
+                            <li>2 Languages</li>
+                            <li><span class="badge text-bg-secondary">PG-13</span></li>
+                        </ul>
+                        <br>
+                        <p style="font-size: 1.05rem;">Spider-Man seeks the help of Doctor Strange to forget his exposed secret identity as Peter Parker.
+                            However, Strange's spell goes horribly wrong, leading to unwanted guests entering their universe.</p>
+
+                        <p>Action | Fantasy | sci-fi</p>
+                    </div>
+
+                    <div class="text-btn">
+                            <button class="btn btn-secondary"id = "Watch_Btn" type="button">Watch now</button>
+                            <button class="btn btn-secondary"id = "plus_btn" type="button">+</button>
+                    </div>
+                </div>
+                <!-- Trailer twelve -->
+                <div class="trailer-text" id="tr12" style="display: none;">
+                    <div class="trailer-descripton">
+                            <img src="./Trailers/Trailer_Texts/D&P.png" alt="img">
+                        <ul>
+                            <li>2024</li>
+                            <li>2 Languages</li>
+                            <li><span class="badge text-bg-secondary">R-17+</span></li>
+                        </ul>
+                        <br>
+                        <p style="font-size:1rem">Deadpool's peaceful existence comes crashing down when the Time Variance Authority recruits him to help safeguard the multiverse.
+                            He soon unites with his would-be pal, Wolverine, to complete the mission and save his world from an existential threat.</p>
+
+                        <p>Action | Comedy</p>
+                    </div>
+
+                    <div class="text-btn">
+                            <button class="btn btn-secondary"id = "Watch_Btn" type="button">Watch now</button>
+                            <button class="btn btn-secondary"id = "plus_btn" type="button">+</button>
+                    </div>
+                </div>
+                <!-- Trailer thirteen -->
+                <div class="trailer-text" id="tr13" style="display: none;">
+                    <div class="trailer-descripton">
+                            <img src="./Trailers/Trailer_Texts/Ben10.png" alt="img">
+                        <ul>
+                            <li>2006</li>
+                            <li>3 Seasons</li>
+                            <li>2 Languages</li>
+                            <li><span class="badge text-bg-secondary">TV-14</span></li>
+                        </ul>
+                        <br>
+                        <p>Ben Tennyson is now 15 and becoming a leader wearing his powerful Omnitrix again.
+                            Grandpa Max is missing and Ben needs the help of Gwen and Kevin to find him.
+                            </p>
+
+                        <p>Action | Fantasy | Sci-fi</p>
+                    </div>
+
+                    <div class="text-btn">
+                            <button class="btn btn-secondary"id = "Watch_Btn" type="button">Watch now</button>
+                            <button class="btn btn-secondary"id = "plus_btn" type="button">+</button>
+                    </div>
+                </div>
+                <!-- Trailer Fourteen -->
+                <div class="trailer-text" id="tr14" style="display: none;">
+                    <div class="trailer-descripton">
+                            <img src="./Trailers/Trailer_Texts/Naruto.png" alt="img">
+                        <ul>
+                            <li>2007</li>
+                            <li>21 Seasons</li>
+                            <li>3 Languages</li>
+                            <li><span class="badge text-bg-secondary">TV-14</span></li>
+                        </ul>
+                        <br>
+                        <p>Naruto Uzumaki, is a loud, hyperactive, adolescent ninja who constantly searches for approval 
+                            and recognition on his journey to becoming Hokage in his village.</p>
+
+                        <p>Adventure | Action | Shonen</p>
+                    </div>
+
+                    <div class="text-btn">
+                            <button class="btn btn-secondary"id = "Watch_Btn" type="button">Watch now</button>
+                            <button class="btn btn-secondary"id = "plus_btn" type="button">+</button>
+                    </div>
+                </div>
+                <!-- Trailer Fifteen -->
+                <div class="trailer-text" id="tr15" style="display: none;">
+                    <div class="trailer-descripton">
+                            <img src="./Trailers/Trailer_Texts/DBS SuperHero.png" alt="img">
+                        <ul>
+                            <li>2022</li>
+                            <li>3 Languages</li>
+                            <li><span class="badge text-bg-secondary">TV-14</span></li>
+                        </ul>
+                        <br>
+                        <p>The Red Ribbon Army was once destroyed by Son Goku.
+                            Individuals who carry on its spirit have created the ultimate androids -- 
+                            Gamma 1 and Gamma 2.</p>
+
+                        <p>Adventure | Action | Shonen</p>
+                    </div>
+
+                    <div class="text-btn">
+                            <button class="btn btn-secondary"id = "Watch_Btn" type="button">Watch now</button>
+                            <button class="btn btn-secondary"id = "plus_btn" type="button">+</button>
+                    </div>
+                </div>
+
+            </div>
+            <br><br><br>
+
+            <h2>Latest Releases</h2>
+            <a href="#"><h5>...view all...</h5></a>
+            <br>
+            <div class="posters">
+                    <div class="card" id="card1">
+                        <img src="./Cards/Latest_Releases/DeadpoolNW.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card2">
+                        <img src="./Cards/Latest_Releases/Agatha.png" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card3">
+                        <img src="./Cards/Latest_Releases/DB.png" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card4">
+                        <img src="./Cards/Latest_Releases/TaazaKhabar.png" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card5">
+                        <img src="./Cards/Latest_Releases/Stree2.png" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card6">
+                        <img src="./Cards/Latest_Releases/Joker.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+            </div>
+            <br><br><br>
+
+            <h2>Coming soon...</h2>
+            <a href="#"><h5>...view all...</h5></a>
+            <br>
+            <div class="posters">
+                    <div class="card" id="card1">
+                        <img src="./Cards/Coming_Soon/Singham_Again.jpeg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch trailer</button>
+                    </div>
+                    <div class="card" id="card2">
+                        <img src="./Cards/Coming_Soon/Venom3.jpeg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch trailer</button>
+                    </div>
+                    <div class="card" id="card3">
+                        <img src="./Cards/Coming_Soon/BhulBhulaiya3.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch trailer</button>
+                    </div>
+            </div>
+
+            <br><br><br>
+            <h2>Marvel Cinematic Universe</h2>
+            <a href="#"><h5>...view all...</h5></a>
+            <br>
+            <div class="posters">
+                    <div class="card" id="card1">
+                        <img src="./Cards/Marvel_Cards/BlackPanther.png" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card2">
+                        <img src="./Cards/Marvel_Cards/AvengersEnd.png" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card3">
+                        <img src="./Cards/Marvel_Cards/Loki.png" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card4">
+                        <img src="./Cards/Marvel_Cards/ThorRag.png" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card5">
+                        <img src="./Cards/Marvel_Cards/MoonKnight.png" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card6">
+                        <img src="./Cards/Marvel_Cards/ShangChi.png" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+            </div>
+
+            <br><br><br>
+            <h2>Popular Animes</h2>
+            <a href="#"><h5>...view all...</h5></a>
+            <br>
+            <div class="posters">
+                    <div class="card" id="card1">
+                        <img src="./Cards/Anime_Cards/AOT.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card2">
+                        <img src="./Cards/Anime_Cards/DBZ.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card3">
+                        <img src="./Cards/Anime_Cards/OnePiece.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card4">
+                        <img src="./Cards/Anime_Cards/NarutoShippu.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card5">
+                        <img src="./Cards/Anime_Cards/DemonSlayer.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card6">
+                        <img src="./Cards/Anime_Cards/DeathNote.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+            </div>
+
+            <br><br><br>
+            <h2>Best of Indian Mythologies</h2>
+            <a href="#"><h5>...view all...</h5></a>
+            <br>
+            <div class="posters">
+                    <div class="card" id="card1">
+                        <img src="./Cards/Dharmic_Shows/Ramayan.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card2">
+                        <img src="./Cards/Dharmic_Shows/Mahadev.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card3">
+                        <img src="./Cards/Dharmic_Shows/Mahabharat.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card4">
+                        <img src="./Cards/Dharmic_Shows/ShriKrishna.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card5">
+                        <img src="./Cards/Dharmic_Shows/RadhaKrishn.jpeg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card6">
+                        <img src="./Cards/Dharmic_Shows/BRmahabharat.jpeg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+            </div>
+
+            <br><br><br>
+            <h2>Nostalgic Animated Shows</h2>
+            <a href="#"><h5>...view all...</h5></a>
+            <br>
+            <div class="posters">
+                    <div class="card" id="card1">
+                        <img src="./Cards/Animated_Shows/adventureTime.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card2">
+                        <img src="./Cards/Animated_Shows/ben10AF.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card3">
+                        <img src="./Cards/Animated_Shows/bean.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card4">
+                        <img src="./Cards/Animated_Shows/Courage.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card5">
+                        <img src="./Cards/Animated_Shows/TomAndJerry.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card6">
+                        <img src="./Cards/Animated_Shows/OggyandCockroaches.png" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+            </div>
+
+            <br><br><br>
+            <h2>Animation Movies</h2>
+            <a href="#"><h5>...view all...</h5></a>
+            <br>
+            <div class="posters">
+                    <div class="card" id="card1">
+                        <img src="./Cards/Animated_Movies/balGanesh.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card2">
+                        <img src="./Cards/Animated_Movies/happyFeet.jpeg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card3">
+                        <img src="./Cards/Animated_Movies/KFP3.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card4">
+                        <img src="./Cards/Animated_Movies/Ratatouille.jpeg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card5">
+                        <img src="./Cards/Animated_Movies/IceAge.jpeg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+                    <div class="card" id="card6">
+                        <img src="./Cards/Animated_Movies/HTTYD.jpg" alt="img">
+                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                    </div>
+            </div>
+            
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-section logo-section">
+                        <h3>RJTV UNIVERSE</h3>
+                        <p>Watch & Explore in Style</p>
+                    </div>
+                    <div class="footer-section links-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="../index.html">Terms of use</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section social-section">
+                        <h4>Follow Us</h4>
+                        <a href="https://t.me/RJTVofficial2021"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 RJTV UNIVERSE. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+        
+        <script src="./home_stars.js"></script>
+        <script src="./SpaceSHips/homeAliens.js"></script>
+        <script src="app.js"></script>
+        <script>
+            // Select all elements with the class 'btn'
+            const buttons = document.querySelectorAll('.btn');
+            
+            // Loop through each button and set an event listener
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Open the link in a new tab
+                    window.open('./construction.html', '_blank');
+                });
+            });
+        </script>
+        
+</body>
+</html>

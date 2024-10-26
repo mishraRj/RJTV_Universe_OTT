@@ -23,6 +23,18 @@ html, body {
     flex-direction: column;
 }
 
+.lazy-item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 0.6s ease-out;
+}
+
+.lazy-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 body{
     min-height: 100vh;
     transition: 2s ease-in;

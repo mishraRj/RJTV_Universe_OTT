@@ -1,5 +1,5 @@
 /* Snowflake styling */
-.snow {
+.star {
     height: 4px;
     width: 4px;
     background-color: white;
@@ -22,9 +22,9 @@
     }
 }
 
-/* @media (max-width: 654px) {
-    .snow {
+@media (max-width: 654px) {
+    .star {
         animation: none;
         display: none;
     }
-} */
+}

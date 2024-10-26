@@ -386,9 +386,9 @@ footer {
 
 @media (min-height: 375px) and (max-width: 654px) {
     .trailer{
-    width: 70%; /* or specific width like 500px */
+    width: 90%; /* or specific width like 500px */
     height: auto;
-    margin-left: 90px;
+    margin-left: 0;
 
 }
 .trailer-text {
@@ -428,7 +428,7 @@ footer {
     left: 70px;
 }
 h2{
-    left: 100px;
+    left: 0;
 }
 h5{
     right: 90px;
@@ -437,21 +437,13 @@ h5{
     width: 80px; /* Fixed width for cards */
     height: 130px; /* Fixed height for cards */
     margin-right: 10px; /* Space between cards */
-    left: 10px;
+    left: -60px;
 }
 .card img{
     width: 80px; /* Fixed width for cards */
     height: 130px; /* Fixed height for cards */
 }
-#card4{
-    display: none;
-}
-#card5{
-    display: none;
-}
-#card6{
-    display: none;
-}
+
 .nav-bar {
     height: 100vh;
     width: 80px; /* Initial width */

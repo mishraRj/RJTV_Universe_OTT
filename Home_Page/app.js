@@ -163,3 +163,24 @@ let observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 observer.observe(video);
+
+
+// Adding Lazy-items
+
+// Select all elements to lazy load
+const lazyItems = document.querySelectorAll('.lazy-item');
+
+// New observer instance specifically for lazy items
+let lazyObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // Stop observing once visible
+        }
+    });
+}, {
+    threshold: 0.1 // Trigger when 10% of the element is visible
+});
+
+// Observe each lazy-item
+lazyItems.forEach(item => lazyObserver.observe(item));

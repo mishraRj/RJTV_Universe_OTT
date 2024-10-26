@@ -70,7 +70,7 @@ h1 {
     opacity: 0.7;
     text-shadow: 0 0 4px black;
     transition: opacity 0.8s ease-in-out; /* Smooth transition for opacity */
-    z-index: 1000;
+    z-index: 300;
 }
 
 .trailer-text:hover{
@@ -326,6 +326,7 @@ footer {
     .footer-content {
         flex-direction: column;
         text-align: center;
+        width: 100%;
     }
 }
 
@@ -349,16 +350,12 @@ footer {
         font-size: 1rem;
         line-height: 15px;
     }
-    .form-check{
-        display: none;
-    }
 }
 
 @media (min-height: 654px) and (max-width: 762px) {
         .trailer{
         width: 100%; /* or specific width like 500px */
         height: auto;
-        border-radius: 0;
     }
     .trailer-text {
         height: 30vh; /* Height of the trailer text */
@@ -385,41 +382,42 @@ footer {
         font-size: 0.8rem;
         line-height: 15px;
     }
-    .form-check{
-        display: none;
-    }
 }
 
 @media (min-height: 375px) and (max-width: 654px) {
     .trailer{
-    width: 100%; /* or specific width like 500px */
+    width: 70%; /* or specific width like 500px */
     height: auto;
-    border-radius: 0;
-    margin-left: 10px;
+    margin-left: 90px;
+
 }
 .trailer-text {
-    height: 20vh; /* Height of the trailer text */
-    width: 40vh; /* Width of the trailer text */
+    height: 10vh; /* Height of the trailer text */
+    width: 30vh; /* Width of the trailer text */
+    z-index: 300;
+    bottom: 25%;
 }
 .trailer-text img {
     display: block;
+    
 }
 
 .trailer-text p {
-    display: block;
+    display: none;
+
 }
 
 .text-btn button {
     height: 30px; /* Set a fixed height for buttons */
-    font-size: 0.7rem; /* Consistent font size */
+    font-size: 0.5rem; /* Consistent font size */
 }
 
 #Watch_Btn {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 #plus_btn {
-    font-size: 1.2rem; /* Increase font size for the plus icon */
+    font-size: 1rem; /* Increase font size for the plus icon */
 }
 
 .trailer-text ul {
@@ -430,7 +428,7 @@ footer {
     left: 70px;
 }
 h2{
-    left: 70px;
+    left: 100px;
 }
 h5{
     right: 90px;
@@ -439,6 +437,7 @@ h5{
     width: 80px; /* Fixed width for cards */
     height: 130px; /* Fixed height for cards */
     margin-right: 10px; /* Space between cards */
+    left: 10px;
 }
 .card img{
     width: 80px; /* Fixed width for cards */
@@ -457,8 +456,15 @@ h5{
     height: 100vh;
     width: 80px; /* Initial width */
 }
-.form-check{
-    display: none;
+.form-check {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: calc(100% - 330px); /* Position 20px above `child2`'s top border */
+    right: 30px;
+    height: 5px;
+    width: auto;
 }
 }
 

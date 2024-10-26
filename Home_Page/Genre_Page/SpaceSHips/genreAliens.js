@@ -8,20 +8,20 @@ const images = [
 ]; // Ensure paths are correct
 
 // Get the total document height
-const documentHeight = document.body.scrollHeight-200;
+// const documentHeight = document.body.scrollHeight-200;
 
 for (let i = 0; i < 6; i++) {
     let spaceShip = document.createElement('div');
     spaceShip.classList.add('spaceShip');
 
     // Set random horizontal position (within 100% width)
-    spaceShip.style.left = `${Math.random() * 100}vw`; 
+    spaceShip.style.left = `${Math.random() * 10}vw`; 
 
     // Set random vertical position (within the total document height)
-    spaceShip.style.top = `${Math.random() * documentHeight}px`; // Use total document height
+    spaceShip.style.top = `${Math.random() * 100}vh`; // Use total document height
 
     // Random animation duration to make each spaceship unique
-    spaceShip.style.animationDuration = `${Math.random() * 70 + 60}s`; // Adjusted speed
+    spaceShip.style.animationDuration = `${Math.random() * 60 + 50}s`; // Adjusted speed
 
 
     // Create an image element and assign random src

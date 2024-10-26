@@ -1,13 +1,12 @@
 .nav-bar {
     position: fixed;
-    left: 0px;
     height: 100vh;
     width: 100px; /* Initial width */
     background-color:  rgba(0, 0, 0, 0.333); /* Initial transparency */
     transition: width 0.5s ease-in-out, background-color 0.5s ease; /* Smooth transition */
     overflow: hidden;
     top: 10px;
-    z-index: 1000; /* To appear on top of the main content */
+    z-index: 5000; /* To appear on top of the main content */
     box-shadow: none; /* Initially no shadow */
     border: none;
 }
@@ -90,6 +89,7 @@
     min-width: 30px; /* Ensure enough space for the icons */
     text-align: center; /* Center the icons */
     opacity: 0.6;
+    cursor: pointer;
 }
 
 .nav-bar .menu a {
@@ -130,29 +130,17 @@
      /* Add glow effect */
 }
 
-@media (max-width: 754px) {
+@media (min-width: 654px) and (max-width: 754px) {
     .nav-bar {
     position: fixed;
     left: -300px;
     height: 100vh;
     width: 190px; /* Initial width */
     transition: left 1s linear, background-color 0.5s ease; /* Smooth transition */
-    overflow: hidden;
-    top: 10px;
-    z-index: 1000; /* To appear on top of the main content */
-    box-shadow: none; /* Initially no shadow */
-    border: none;
-    background-color: rgba(0, 0, 0, 0.922); /* Slightly less transparent on hover */
-    box-shadow: 
-            0 0 100px rgb(0, 0, 0),   /* Close, stronger shadow */
-            0 0 300px rgba(0, 0, 0, 0.927),   /* Mid-range, fading shadow */
-            0 0 600px rgba(0, 0, 0, 0.856),   /* Farther, slightly weaker shadow */
-            0 0 1000px rgba(0, 0, 0, 0.753),
-            0 0 2000px rgba(0, 0, 0, 0.696);  /* Even farther, still visible */
 }
     
     .nav-bar .menu a {
-        display: block;
+        display: inline-block;
     }
     
     .nav-bar:hover .menu a {
@@ -177,7 +165,7 @@
     
     .subscription .btn_two i {
         position: absolute;
-        left: 160px;
+        left: 150px;
         top: 6px;
         font-size: 20px;
         color: gray;
@@ -204,4 +192,68 @@
         opacity: 1;
         transition: 1s;
     }
+}
+
+@media (max-width: 654px) {
+    .nav-bar {
+        position: fixed;
+        left: -300px;
+        height: 100vh;
+        width: 300px; /* Initial width */
+        transition: left 1s linear, background-color 0.5s ease; /* Smooth transition */
+    }
+        
+        .nav-bar .menu a {
+            display: inline-block;
+        }
+        
+        .nav-bar:hover .menu a {
+            display: inline-block;
+        }
+    
+        .btn_one i {
+            color: white;
+            font-size: 30px;
+            font-weight: 700;
+            position: absolute;
+            left: 16px;
+            line-height: 70px;
+            transition: 0.5s linear;
+            z-index: 1000;
+            display: block;
+        }
+        
+        #check {
+            display: none;
+        }
+        
+        .subscription .btn_two i {
+            position: absolute;
+            left: 150px;
+            top: 6px;
+            font-size: 20px;
+            color: gray;
+            opacity: 0;
+            transition: 0.5s linear;
+            cursor: pointer;
+        }
+        
+        .btn_one i:hover {
+            font-size: 40px;
+        }
+        
+    
+        #check:checked ~ .nav-bar {
+            left: 0; /* Move navbar into view when checkbox is checked */
+            transition: left 1s ease-out;
+        }
+        
+        #check:checked ~ .btn_one i {
+            opacity: 0;
+        }
+        
+        #check:checked ~ .nav-bar .btn_two i {
+            opacity: 1;
+            transition: 1s;
+        }
 }

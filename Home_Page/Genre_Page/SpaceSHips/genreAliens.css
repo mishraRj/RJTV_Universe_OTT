@@ -1,6 +1,6 @@
 .spaceShip {
     position: absolute;
-    z-index: 10;
+    z-index: -1;
     animation: spaceShipMove 70s linear infinite;
 }
 
@@ -28,7 +28,7 @@
         transform: scaleX(-1); /* Flip horizontally */
     }
     100% {
-        transform: translate(-80vw, -50vh); /* Final position */
+        transform: translate(-90vw, -50vh); /* Final position */
     }
 }
 
@@ -36,4 +36,11 @@
 .spaceShip img {
     width: 50px;
     height: 50px;
+}
+
+@media (max-width: 654px) {
+    .spaceShip {
+        animation: none; /* Disable animation */
+        display: none;
+    }
 }

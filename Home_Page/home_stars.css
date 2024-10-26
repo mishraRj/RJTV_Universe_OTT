@@ -22,3 +22,9 @@
     }
 }
 
+/* @media (max-width: 654px) {
+    .snow {
+        animation: none;
+        display: none;
+    }
+} */

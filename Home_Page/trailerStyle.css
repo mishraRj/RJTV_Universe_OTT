@@ -425,7 +425,7 @@ footer {
 }
 
 .posters{
-    left: 70px;
+    left: 0;
 }
 h2{
     left: 0;
@@ -437,7 +437,6 @@ h5{
     width: 80px; /* Fixed width for cards */
     height: 130px; /* Fixed height for cards */
     margin-right: 10px; /* Space between cards */
-    left: -60px;
 }
 .card img{
     width: 80px; /* Fixed width for cards */
@@ -460,3 +459,92 @@ h5{
 }
 }
 
+@media(max-width: 375px) {
+    .trailer{
+    width: 100%; /* or specific width like 500px */
+    height: auto;
+    animation: none;
+}
+.trailer-text {
+    height: 10vh; /* Height of the trailer text */
+    width: 30vh; /* Width of the trailer text */
+    z-index: 300;
+    bottom: 25%;
+}
+.trailer-text img {
+    display: block;
+    
+}
+
+.trailer-text p {
+    display: none;
+
+}
+
+.text-btn button {
+    height: 30px; /* Set a fixed height for buttons */
+    font-size: 0.5rem; /* Consistent font size */
+}
+
+#Watch_Btn {
+    font-size: 0.6rem;
+}
+
+#plus_btn {
+    font-size: 0.8rem; /* Increase font size for the plus icon */
+}
+
+.trailer-text ul {
+    display: none;
+}
+
+.posters{
+    left: 0;
+}
+h2{
+    left: 0;
+}
+h5{
+    right: 90px;
+}
+.card {
+    width: 80px; /* Fixed width for cards */
+    height: 130px; /* Fixed height for cards */
+    margin-right: 10px; /* Space between cards */
+}
+
+#card5{
+    display: none;
+}
+
+#card6{
+    display: none;
+}
+.card img{
+    width: 80px; /* Fixed width for cards */
+    height: 130px; /* Fixed height for cards */
+}
+
+.nav-bar {
+    height: 100vh;
+    width: 80px; /* Initial width */
+}
+.form-check {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: calc(100% - 430px); /* Position 20px above `child2`'s top border */
+    right: 30px;
+    height: 3px;
+    width: 70%;
+}
+.form-check label{
+    font-size: medium;
+}
+
+.form-check #flexSwitchCheckChecked{
+    width: 20%;
+    height: 100%;
+}
+}

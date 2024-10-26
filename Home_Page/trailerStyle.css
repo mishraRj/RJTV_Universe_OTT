@@ -460,6 +460,9 @@ h5{
 }
 
 @media(max-width: 375px) {
+    * {
+        animation: none;
+    }
     .trailer{
     width: 100%; /* or specific width like 500px */
     height: auto;
@@ -546,5 +549,20 @@ h5{
 .form-check #flexSwitchCheckChecked{
     width: 20%;
     height: 100%;
+}
+
+.text{
+    animation: none;
+}
+
+.nav-bar .menu a{
+    animation: none !important;
+}
+
+.subscription h3{
+    animation: none;
+}
+.form-switch{
+    animation: none;
 }
 }

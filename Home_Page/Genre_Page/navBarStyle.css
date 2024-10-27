@@ -153,6 +153,8 @@
     
     .nav-bar .menu a {
         display: block;
+        text-shadow: none; /* Disable glowing effect */
+        animation: none; /* Remove any animation on text */
     }
     
     .nav-bar:hover .menu a {
@@ -173,6 +175,10 @@
     
     #check {
         display: none;
+    }
+    .subscription h3{
+        text-shadow: none;
+        animation: none;
     }
     
     .subscription .btn_two i {

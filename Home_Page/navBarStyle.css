@@ -200,7 +200,7 @@
         left: -300px;
         height: 100vh;
         width: 300px; /* Initial width */
-        transition: left 1s linear, background-color 0.5s ease; /* Smooth transition */
+        transition: left 0.6s linear, background-color 0.5s ease; /* Smooth transition */
     }
         
         .nav-bar .menu a {

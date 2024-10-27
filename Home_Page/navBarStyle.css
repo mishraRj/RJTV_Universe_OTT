@@ -209,6 +209,8 @@
         
         .nav-bar:hover .menu a {
             display: inline-block;
+            text-shadow: none; /* Disable glowing effect */
+            animation: none; /* Remove any animation on text */
         }
     
         .btn_one i {
@@ -225,6 +227,11 @@
         
         #check {
             display: none;
+        }
+
+        .subscription h3{
+            text-shadow: none;
+            animation: none;
         }
         
         .subscription .btn_two i {

@@ -45,6 +45,7 @@ body{
     background-size: initial;
     z-index: -10;
     overflow-x: hidden;
+    transition: background-image 8s ease-in-out; /* Smooth transition */
 }
 
 .spacer {
@@ -62,6 +63,7 @@ body{
     flex: 1;
     background-color: #121212;
     background-image: url('../Welcome_Imgs/Universe.jpg'); /* Adjust the path if necessary */
+    transition: background-image 8s ease-in-out;
 }
 
 

@@ -1,10 +1,11 @@
-.spaceShip {
+.ghost {
     position: absolute;
-    z-index: 10;
-    animation: spaceShipMove 70s linear infinite;
+    z-index: 5000;
+    animation: ghostMove 60s linear infinite;
+    opacity: 0.5;
 }
 
-@keyframes spaceShipMove {
+@keyframes ghostMove {
     0% {
         transform: translate(0, 0); /* Starting position */
     }
@@ -32,14 +33,13 @@
     }
 }
 
-
-.spaceShip img {
+.ghost img {
     width: 50px;
     height: 50px;
 }
 
 @media (max-width: 654px) {
-    .spaceShip {
+    .ghost {
         animation: none; /* Disable animation */
         display: none;
     }

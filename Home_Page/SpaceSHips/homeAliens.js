@@ -20,6 +20,7 @@ const images = [
 ]; // Ensure paths are correct
 
 // Get the total document height
+
 const documentHeight = document.body.scrollHeight - 400;
 
 for (let i = 0; i < 19; i++) {

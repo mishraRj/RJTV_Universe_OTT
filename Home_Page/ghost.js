@@ -2,6 +2,9 @@
 const btn = document.querySelector('.horror_btn');
 const backgroundAudio = document.getElementById('backgroundAudio');
 
+// Prevent autoplay on load
+backgroundAudio.pause (); // Set volume to 0 or do not call play() until interaction
+
 btn.addEventListener('click', () =>{
     console.log("clicked");
     // Stop spaceship animations by setting animation to "none"
@@ -32,6 +35,8 @@ function showLoader() {
 
     // Set the image to be displayed immediately
     bhootImage.style.display = 'block';
+    
+    // Only play audio after button is clicked
     backgroundAudio.play();
 
     // Use a timeout to allow the browser to process the display change

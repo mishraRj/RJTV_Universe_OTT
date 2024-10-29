@@ -1,11 +1,7 @@
 // Select the button and audio element
 const btn = document.querySelector('.horror_btn');
 
-// Prevent autoplay on load
-window.onload = function() {
     const backgroundAudio = document.getElementById('backgroundAudio');
-    backgroundAudio.pause(); // Ensure the audio is paused on load
-};
 // Set volume to 0 or do not call play() until interaction
 
 btn.addEventListener('click', () =>{

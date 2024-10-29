@@ -120,10 +120,6 @@ const trailers = [
 window.onload = playRandomTrailers();
 // Function to play random trailers
 function playRandomTrailers() {
-    // Show the loading indicator
-    const loadingIndicator = document.getElementById("loadingIndicator");
-    loadingIndicator.style.display = "flex"; // Show loader
-
     // Hide all trailer descriptions initially
     trailers.forEach(trailer => {
         document.getElementById(trailer.descriptionId).style.display = 'none';
@@ -135,21 +131,27 @@ function playRandomTrailers() {
     // Get the video source element
     const videoSource = document.getElementById("video-source");
 
-    // Change the source to a random trailer
-    videoSource.src = trailers[randomIndex].src;
+    // Show the loading indicator
+    const loadingIndicator = document.getElementById("loadingIndicator");
+    loadingIndicator.style.display = "block"; // Show loading indicator
 
-    // Show the corresponding trailer description
-    document.getElementById(trailers[randomIndex].descriptionId).style.display = 'block';
+    // Simulate a loading time
+    setTimeout(() => {
+        // Change the source to a random trailer
+        videoSource.src = trailers[randomIndex].src;
 
-    // Load and play the new video
-    video.load(); // Load the new video
+        // Show the corresponding trailer description
+        document.getElementById(trailers[randomIndex].descriptionId).style.display = 'block';
 
-    // Hide the loading indicator after the video metadata is loaded
-    video.onloadedmetadata = function() {
-        loadingIndicator.style.display = "none"; // Hide loader
+        // Load and play the new video
+        video.load(); // Load the new video
         video.play(); // Start playing the video
-    };
+
+        // Hide the loading indicator after the video is ready to play
+        loadingIndicator.style.display = "none"; // Hide loading indicator
+    }, 3000); // Adjust the delay as needed (3000 ms = 3 seconds)
 }
+
 
 
 // When video ends, it will play the next video

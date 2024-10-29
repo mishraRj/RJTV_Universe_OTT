@@ -1,7 +1,4 @@
 // Create multiple stars and append to the body
-const pageHeight = document.body.scrollHeight;
-const pageWidth = document.body.scrollWidth;
-
 for (let i = 0; i < 50; i++) { // Keep star count manageable for performance
     let star = document.createElement('div');
     star.classList.add('star');

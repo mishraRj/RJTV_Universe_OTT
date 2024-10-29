@@ -1,28 +1,33 @@
-// Get the footer element
+// Get the footer element from the HTML
 const footer = document.querySelector('footer');
 
-// Function to generate snowflakes
+// Function to create snowflakes
 function generateStars() {
-    // Get the footer's position relative to the document
-    const footerPosition = footer.getBoundingClientRect().top + window.scrollY;
-    const maxFallHeight = footerPosition - 400; // 10px above the footer
+    // Get the distance of the footer from the top of the page
+    const footerPosition = footer.getBoundingClientRect().top;
+    const maxFallHeight = footerPosition - 400; // Set the max height 400px above the footer
 
+    // Create 50 snowflake elements
     for (let i = 0; i < 50; i++) {
+        // Create a new div for each snowflake
         let star = document.createElement('div');
+        // Add the 'star' class to style the snowflake
         star.classList.add('star');
         
-        // Random horizontal position and animation duration
-        star.style.left = `${Math.random() * 90}vw`; // Random position across the width
-        star.style.animationDuration = `${Math.random() * 80 + 65}s`; // Random fall speed between 55s to 125s
-        star.style.animationDelay = `${Math.random() * 3}s`; // Random delay to stagger start times
+        // Set a random horizontal position across the screen width
+        star.style.left = `${Math.random() * 90}vw`; 
+        // Set a random animation duration for each snowflake to fall
+        star.style.animationDuration = `${Math.random() * 80 + 65}s`;
+        // Set a random delay to stagger the snowflake starts
+        star.style.animationDelay = `${Math.random() * 3}s`;
         
-        // Pass maxFallHeight to the CSS custom property
+        // Set the maximum fall height for each snowflake
         star.style.setProperty('--page-height', `${maxFallHeight}px`);
         
-        // Append snowflake to the body
+        // Add the snowflake to the body of the HTML page
         document.body.appendChild(star);
     }
 }
 
-// Call the function to generate snowflakes
+// Call the function to create the snowflakes on the page
 generateStars();

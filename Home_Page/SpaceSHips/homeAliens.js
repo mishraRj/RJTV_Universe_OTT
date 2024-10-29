@@ -15,7 +15,7 @@ const images = [
     './SpaceSHips/Aestoroid1.png', 
     './SpaceSHips/Alien4.png',  
     './SpaceSHips/Aestoroid2.png',
-    './SpaceSHips/Alien4.png', 
+    './SpaceSHips/Alien5.png', 
     './SpaceSHips/bigspaceShipAliens.png', 
 ]; // Ensure paths are correct
 
@@ -23,7 +23,7 @@ const images = [
 
 const documentHeight = document.body.scrollHeight - 400;
 
-for (let i = 0; i < 19; i++) {
+for (let i = 0; i < images.length; i++) {
     let spaceShip = document.createElement('div');
     spaceShip.classList.add('spaceShip');
 
@@ -38,12 +38,12 @@ for (let i = 0; i < 19; i++) {
 
     // Create an image element and assign random src
     let img = document.createElement('img');
-    img.src = images[i % images.length]; // Cycle through images
+    img.src = images[i]; // Cycle through images
 
     // For the last two spaceships, set a larger size
-    if (i >= images.length - 1) {
-        img.style.width = "300px"; // Larger size for the last two spaceships
-        img.style.height = "300px";
+    if (i >= images.length - 2) {
+        img.style.width = "250px"; // Larger size for the last two spaceships
+        img.style.height = "250px";
         img.style.opacity = "0.3";
     } else {
         img.style.width = "70px"; // Default size for other spaceships

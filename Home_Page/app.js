@@ -120,6 +120,10 @@ const trailers = [
 window.onload = playRandomTrailers();
 // Function to play random trailers
 function playRandomTrailers() {
+    // Show the loading indicator
+    const loadingIndicator = document.getElementById("loadingIndicator");
+    loadingIndicator.style.display = "flex"; // Show loader
+
     // Hide all trailer descriptions initially
     trailers.forEach(trailer => {
         document.getElementById(trailer.descriptionId).style.display = 'none';
@@ -139,8 +143,14 @@ function playRandomTrailers() {
 
     // Load and play the new video
     video.load(); // Load the new video
-    video.play(); // Start playing the video
+
+    // Hide the loading indicator after the video metadata is loaded
+    video.onloadedmetadata = function() {
+        loadingIndicator.style.display = "none"; // Hide loader
+        video.play(); // Start playing the video
+    };
 }
+
 
 // When video ends, it will play the next video
 video.addEventListener('ended', playRandomTrailers);

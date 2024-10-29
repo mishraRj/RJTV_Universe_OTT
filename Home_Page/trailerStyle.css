@@ -149,6 +149,64 @@ li .badge {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.loader { 
+    position: fixed; /* Cover the whole screen */
+    top: 40%;
+    left: 45%;
+    width: 40vw;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    display: flex; /* Centering */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it appears above everything */
+}
+
+.loader p {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.dots::after {
+    content: ''; /* Initially no dots */
+    animation: dotAnimation 1.5s infinite steps(1);
+}
+
+@keyframes dotAnimation {
+    0% { content: ''; }          /* No dots */
+    25% { content: '.'; }        /* One dot */
+    50% { content: '..'; }       /* Two dots */
+    75% { content: '...'; }      /* Three dots */
+    100% { content: ''; }        /* Reset to no dots */
+}
+
+.spinner {
+    border: 4px solid #9400d3; /* Light grey with transparency for the outer border */
+    border-top: 4px solid transparent; /* Make the top transparent */
+    border-radius: 50%;
+    width: 50px; /* Size of the spinner */
+    height: 50px; /* Size of the spinner */
+    animation: spin 1s linear infinite; /* Spin animation */
+
+}
+
+/* Keyframes for spinning and glowing */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 0 0 10px #ff00ff, 0 0 20px #9400d3, 0 0 30px #4b0082; /* Initial glow */
+    }
+    50% {
+        box-shadow: 0 0 20px #ff1493, 0 0 30px #8a2be2, 0 0 40px #00ced1; /* Mid glow */
+    }
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 0 0 15px #00ced1, 0 0 25px #ff00ff, 0 0 35px #9400d3; /* Final glow */
+    }
+}
+
+
+
 /* Add hover effect for buttons */
 .text-btn button:hover {
     opacity: 0.9; /* Slightly increase opacity on hover */
@@ -243,7 +301,7 @@ h2 {
 }
 
 h5 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: wheat;
     position: absolute; /* Change to relative */
     right: 40px; /* Keep this if you want it offset from the left */
@@ -254,12 +312,20 @@ h5 {
 }
 
 .horror_btn{
-    animation: color 0.6s infinite alternate;
+    font-size: 2rem;
+    top: 312vh;
+    animation: color 0.2s infinite alternate;
 }
 
 @keyframes color{
-    0% {color: red;}
-    100% {color: wheat;}
+    0% {
+        color: rgb(255, 0, 0);
+        text-shadow: 0 0 20px whitesmoke, 0 0 30px cyan;
+    }
+    100% {
+        color: greenyellow;
+        text-shadow: 0 0 35px cyan, 0 0 45px whitesmoke;
+    }
 }
 
 h5:hover{

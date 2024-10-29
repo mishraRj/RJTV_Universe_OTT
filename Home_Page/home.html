@@ -98,6 +98,11 @@
                 <input class="form-check-input" type="checkbox" role="switch"style="z-index: 1000;" id="flexSwitchCheckChecked" checked>
             </div>
             <div class="trailer lazy-item" id="trailer-container">
+                <div id="loadingIndicator" class="loader" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Loading<span class="dots"></span></p>
+                </div>
+                
                 <video id="trailerVid" autoplay muted>
                     <source id="video-source" src="./Trailers/Home_Trailers/Trailer2.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -445,10 +450,10 @@
 
             <br><br><br>
             <h2>Terrifying Thrillers</h2>
-            <h5 class="horror_btn" onclick="showLoader();">...view all...</h5>
+            <h5 class="horror_btn" onclick="showLoader();">&#128128;...view all...&#128128;</h5>
             <br>
             <div class="posters lazy-item btn_div">
-                <img src="./Cards/horror_Movies/abc/a2.png" alt="img" class="bhoot">
+                <img src="./Cards/horror_Movies/abc/GirlGhost5.png" alt="img" class="bhoot">
                 <audio id="backgroundAudio" autoplay>
                     <source src="./Cards/horror_Movies/Horror_Audio1.mp3" type="audio/mp3">
                     Your browser does not support the audio element.

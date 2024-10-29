@@ -160,34 +160,35 @@ ol {
 /*Style for loader page*/
 
 .loader-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(0, 0, 14); /* Match loader background color */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; /* Ensure it appears above everything */
+    position: fixed; /* Keeps the loader fixed on the screen, even when scrolling */
+    top: 0; /* Position at the top of the viewport */
+    left: 0; /* Position at the left edge of the viewport */
+    width: 100vw; /* Full viewport width to cover the entire screen */
+    height: 100vh; /* Full viewport height to cover the entire screen */
+    background-color: rgb(0, 0, 14); /* Dark background color for the loader */
+    display: flex; /* Use flexbox to center elements inside */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    z-index: 9999; /* High z-index to make sure it appears above all other content */
 }
 
 .loader .text {
-    position: absolute;
-    font-family: 'Protest Guerrilla';
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(0, 0, 14); /* Slightly transparent background */
-    padding: 20px;
-    font-size: 34px;
-    border-radius: 50% ;
-    color: white;
-    line-height: 70px;
-    text-align: center;
-    z-index: 1;
-    animation: glow-text 2s infinite alternate;
+    position: absolute; /* Positions the text element within the loader at a specific location */
+    font-family: 'Protest Guerrilla'; /* Sets the custom font for the text */
+    top: 50%; /* Vertically centers the text within the loader */
+    left: 50%; /* Horizontally centers the text within the loader */
+    transform: translate(-50%, -50%); /* Offsets the text by 50% of its own size to fully center it */
+    background-color: rgb(0, 0, 14); /* Dark background to match the loader overlay */
+    padding: 20px; /* Adds padding around the text for spacing */
+    font-size: 34px; /* Sets the font size of the text */
+    border-radius: 50%; /* Creates a circular background for the text */
+    color: white; /* Sets the text color to white for visibility */
+    line-height: 70px; /* Adds space between lines, giving the text breathing room */
+    text-align: center; /* Centers the text content within the element */
+    z-index: 1; /* Keeps this text above the overlay background but below other elements in the loader */
+    animation: glow-text 2s infinite alternate; /* Adds a glowing animation that alternates every 2 seconds */
 }
+
 
 @keyframes glow-text{
     0%{

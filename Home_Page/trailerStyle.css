@@ -150,9 +150,9 @@ li .badge {
 }
 
 .loader { 
-    position: absolute; /* Cover the whole screen */
-    top: 40%;
-    left: 45%;
+    position: fixed; /* Cover the whole screen */
+    top: 30%;
+    left: 30%;
     width: 40vw;
     height: 40vh;
     background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
@@ -160,24 +160,6 @@ li .badge {
     justify-content: center;
     align-items: center;
     z-index: 9999; /* Ensure it appears above everything */
-}
-
-.loader p {
-    font-size: 1.3rem;
-    color: white;
-}
-
-.dots::after {
-    content: ''; /* Initially no dots */
-    animation: dotAnimation 1.5s infinite steps(1);
-}
-
-@keyframes dotAnimation {
-    0% { content: ''; }          /* No dots */
-    25% { content: '.'; }        /* One dot */
-    50% { content: '..'; }       /* Two dots */
-    75% { content: '...'; }      /* Three dots */
-    100% { content: ''; }        /* Reset to no dots */
 }
 
 .spinner {

@@ -141,15 +141,37 @@ function playRandomTrailers() {
     // Show the corresponding trailer description
     document.getElementById(trailers[randomIndex].descriptionId).style.display = 'block';
 
-    // Load and play the new video
-    video.load(); // Load the new video
+    // Load the new video
+    const video = document.getElementById("trailerVid"); // Assuming you have an ID for the video element
+    video.load();
 
-    // Hide the loading indicator after the video metadata is loaded
+    // Hide the loading indicator after the video is ready to play
     video.onloadedmetadata = function() {
-        loadingIndicator.style.display = "none"; // Hide loader
-        video.play(); // Start playing the video
+        // Optional: add a timeout to ensure the loader stays for a minimum duration
+        setTimeout(() => {
+            loadingIndicator.style.display = "none"; // Hide loader
+            video.play(); // Start playing the video
+        }, 500); // Wait for half a second before hiding the loader
+    };
+
+    // If the video fails to load, keep the loader visible for longer
+    video.onerror = function() {
+        console.error("Error loading video.");
+        setTimeout(() => {
+            loadingIndicator.style.display = "none"; // Hide loader after a timeout even on error
+        }, 2000); // Show loader for 2 seconds before hiding
+    };
+
+    // Optional: Handle the case where the video is buffered
+    video.onwaiting = function() {
+        loadingIndicator.style.display = "flex"; // Show loader if the video is buffering
+    };
+
+    video.onplaying = function() {
+        loadingIndicator.style.display = "none"; // Hide loader when the video is playing
     };
 }
+
 
 
 // When video ends, it will play the next video

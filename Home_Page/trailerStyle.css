@@ -150,7 +150,7 @@ li .badge {
 }
 
 .loader { 
-    position: fixed; /* Cover the whole screen */
+    position: absolute; /* Cover the whole screen */
     top: 40%;
     left: 45%;
     width: 40vw;

@@ -59,7 +59,7 @@ function showLoader() {
         './cards/horror_Movies/abc/Ghost8.png',
         './cards/horror_Movies/abc/GirlGhost7.png',
         './cards/horror_Movies/abc/Ghost9.png',
-        './cards/horror_Movies/abc/a2.png',
+        './cards/horror_Movies/abc/GirlGhost5.png',
         './cards/horror_Movies/abc/GirlGhost2.png',
         './cards/horror_Movies/abc/GirlGhost3.png',
         './cards/horror_Movies/abc/GirlGhost4.png',

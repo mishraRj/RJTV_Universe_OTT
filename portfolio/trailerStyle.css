@@ -1,0 +1,757 @@
+.trailer {
+    width: 91.4%; /* or specific width like 500px */
+    max-width: 1280px; /* Ensures the video doesn't exceed this size */
+    height: 100%; /* Ensures the height is proportional to the width */
+    /* overflow: hidden; */
+    margin-top: 70px;
+    /* background-color: white; */
+    position: relative;
+    margin-left: 100px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    animation: trailer-glow 2s infinite alternate;
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+}
+
+h1 {
+    color: white;
+}
+
+@keyframes trailer-glow {
+    0% {
+        box-shadow: 0 0 10px #ff00ff, 0 0 20px #9400d3, 0 0 30px #4b0082;
+        background-color: #1a0033;
+        border-color: #ff00ff;
+    }
+    50% {
+        box-shadow: 0 0 20px #ff1493, 0 0 30px #8a2be2, 0 0 40px #00ced1;
+        background-color: #330066;
+        border-color: #ff1493;
+    }
+    100% {
+        box-shadow: 0 0 15px #00ced1, 0 0 25px #ff00ff, 0 0 35px #9400d3;
+        background-color: #1a0033;
+        border-color: #ff00ff;
+    }
+}
+
+.trailer video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Ensures no extra margins */
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    z-index: 200;
+}
+
+.fa-volume-high, .fa-volume-xmark {
+    position: absolute;
+    bottom: 30px; /* Adjust as necessary */
+    right: 20px; /* Adjust as necessary */
+    font-size: 24px; /* Adjust size as needed */
+    color: white; /* Color of the icons */
+    z-index: 10;
+}
+
+.trailer-text {
+    height: 70%; /* Height of the trailer text */
+    width: 45%; /* Width of the trailer text */
+    position: absolute;
+    bottom: 0; /* Position at the bottom of the parent */
+    left: 0px; /* Position from the left side */
+    bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Evenly space the children */
+    color: white;
+    opacity: 0.7;
+    text-shadow: 0 0 4px black;
+    transition: opacity 0.8s ease-in-out; /* Smooth transition for opacity */
+    z-index: 300;
+}
+
+.trailer-text:hover{
+    opacity: 1;
+    filter: brightness(1);
+    
+    animation: text-glow 2s infinite alternate;
+}
+
+.trailer-text img {
+    height: 20vh;
+    width: 50vh;
+    display: block;
+}
+
+.trailer-text p {
+    font-size: 1.4rem;
+    line-height: 30px;
+}
+
+.trailer-text ul {
+    list-style: disc; /* Ensures bullet points */
+    padding-left: 20px; /* Adds some padding for the bullets to be visible */
+}
+
+.trailer-text li {
+    display: list-item; /* Makes sure the bullet is shown */
+    float: left; /* This will place the items inline while keeping bullets */
+    margin-right: 20px; /* Space between the list items */
+}
+
+li .badge {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px 15px; /* Adjust padding to make it wider */
+    font-size: 1rem; /* Optional: Adjust font size if needed */
+    word-spacing: 10px;
+    border-radius: 5px; /* Optional: Adjust border radius for rounded corners */
+    text-shadow: 0 0 10px black;
+}
+
+.trailer-descripton {
+    flex: 1; /* This allows the description to take available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Evenly space content within */
+}
+
+.text-btn {
+    display: flex; /* Align buttons in a row */
+    justify-content: flex-start; /* Align buttons to the start */
+    padding: 10px 0; /* Padding on top and bottom */
+}
+
+.text-btn button {
+    border-radius: 10px; /* Rounded corners for buttons */
+    height: 50px; /* Set a fixed height for buttons */
+    margin-right: 10px; /* Space between buttons */
+    font-size: 1rem; /* Consistent font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+#Watch_Btn {
+    background-color: #6c757d; /* Grey background */
+    color: white; /* White text color */
+    flex: 1; /* Allow the watch button to take available space */
+    font-size: 1.3rem;
+}
+
+#plus_btn {
+    color: white; /* White text color */
+    padding: 0 20px; /* Add horizontal padding for the plus button */
+    font-size: 1.5rem; /* Increase font size for the plus icon */
+    display: flex; /* Center icon */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.loader {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Center loader on screen */
+    width: 40vw; 
+    height: 40vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    position: absolute; /* Allow for precise control of its placement */
+    top: 200%; /* Position slightly above the image */
+    left: 110%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner img {
+    width: 100px; /* Adjust width as needed */
+    height: 100px;
+}
+
+
+/* Signal Wave Styles */
+.signal-wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+    animation: waveAnimation 2.5s infinite ease-out;
+}
+
+.signal-wave::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid rgba(255, 255, 255, 0.7); /* Visible top border */
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-radius: 50%;
+}
+
+
+.wave1 {
+    animation-delay: 0s;
+}
+
+.wave2 {
+    animation-delay: 0.5s;
+    width: 160px;
+    height: 160px;
+}
+
+.wave3 {
+    animation-delay: 1s;
+    width: 180px;
+    height: 180px;
+}
+
+@keyframes waveAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.3);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+/* Add hover effect for buttons */
+.text-btn button:hover {
+    opacity: 0.9; /* Slightly increase opacity on hover */
+}
+
+/* Content */
+h2 {
+    font-size: 2rem;
+    color: white;
+    position: relative; /* Change to relative */
+    left: 100px; /* Keep this if you want it offset from the left */
+    z-index: 1;
+    width: 90%;
+    margin-bottom: 10px; /* Add margin to separate from the posters */
+}
+
+.posters {
+    width: 91.5%;
+    height: 250px;
+    position: relative;
+    left: 100px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.slider-icons{
+    transform: scale(2.5);
+    position: absolute;
+    z-index: 9999;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in;
+}
+
+.slider-icons:hover{
+    opacity: 1;
+    
+}
+
+.right, .hrRight, .MCUright, .animeRight, .cartoonRight, .cartoonMoviesRight{
+    right: 8px;
+}
+
+.left, .hrLeft, .MCUleft, .animeLeft, .cartoonLeft, .cartoonMoviesLeft{
+    left: 8px;
+}
+
+.posters img.bhoot {
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    left: 45.5%;
+    display: none;
+    transition: transform 1s ease, opacity 1s ease;
+    z-index: 3000;
+}
+
+
+.card {
+    width: 180px;
+    height: 230px;
+    margin-right: 14px;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 40;
+    box-shadow: 0 0 10px #FFFFFF, 0 0 15px #194e63;
+    transition: transform 1s ease, opacity 0.5s ease; /* Add transition for smooth sliding */
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Hidden cards slide to the left and fade out */
+.hidden-card {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease, opacity 0.5s ease;
+}
+
+.hidden-card-left {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease, opacity 0.5s ease;
+}
+
+/* Visible cards slide in from the right */
+.visible-card {
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 1.5s ease, opacity 0.5s ease;
+}
+
+
+.card img{
+    object-fit: cover;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    width: 180px;
+    height: 233px;
+}
+
+
+#Cards_Watch_Btn {
+    position: absolute;
+    bottom: 0; /* Positions the button at the base of the div */
+    left: 50%; /* Centers the button horizontally */
+    transform: translateX(-50%); /* Ensures the button is perfectly centered */
+    width: 76%; /* Adjust the width of the button */
+    
+    z-index: 1; /* Ensures the button stays above the image */
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Adds semi-transparent background */
+    color: white; /* Button text color */
+    padding: 5px 0; /* Button padding */
+    border-radius: 5px; /* Optional: Rounded corners */
+    text-align: center;
+    font-size: 1rem;
+    display: none;
+    transition: 0.5s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.08);
+    z-index: 200;
+    box-shadow: 0 10px 25px #6708c6;
+}
+
+.card:hover #Cards_Watch_Btn {
+    display: block;
+}
+
+#Cards_Watch_Btn:hover{
+    background-color: white;
+    color: black;
+}
+
+h5 {
+    font-size: 1rem;
+    color: wheat;
+    position: absolute; /* Change to relative */
+    right: 40px; /* Keep this if you want it offset from the left */
+    z-index: 1;
+    opacity: 0.7;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.horror_btn{
+    font-size: 2rem;
+    top: 312vh;
+    animation: color 0.2s infinite alternate;
+}
+
+@keyframes color{
+    0% {
+        color: rgb(255, 0, 0);
+        text-shadow: 0 0 20px whitesmoke, 0 0 30px cyan;
+    }
+    100% {
+        color: greenyellow;
+        text-shadow: 0 0 35px cyan, 0 0 45px whitesmoke;
+    }
+}
+
+h5:hover{
+    opacity: 1;
+    color: chartreuse;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #121212cc;
+    color: white;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px; /* Ensure footer sticks to the bottom */
+    z-index: 1000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #555;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo-section h3 {
+    font-size: 1.8rem;
+    color: #ff00ff; /* Match your glow theme */
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff00ff; /* Hover color for links */
+}
+
+.social-section a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+}
+
+.social-section a:hover {
+    color: #ff00ff; /* Hover color for social icons */
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #222;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1012px) {
+    .trailer{
+        width: 90%; /* or specific width like 500px */
+        height: 80%;
+    }
+    .trailer-text {
+        height: 60%; /* Height of the trailer text */
+        width: 50%; /* Width of the trailer text */
+        /* bottom: 8%; */
+    }
+    .trailer-text img {
+        height: 10vh;
+        width: 25vh;
+        display: block;
+    }
+    
+    .trailer-text p {
+        font-size: 1rem;
+        line-height: 15px;
+    }
+}
+
+@media (min-height: 654px) and (max-width: 762px) {
+        .trailer{
+        width: 100%; /* or specific width like 500px */
+        height: auto;
+    }
+    .trailer-text {
+        height: 30vh; /* Height of the trailer text */
+        width: 50vh; /* Width of the trailer text */
+        position: absolute;
+        left: 0px; /* Position from the left side */
+        bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Evenly space the children */
+        color: white;
+        opacity: 0.7;
+        text-shadow: 0 0 4px black;
+        transition: opacity 0.8s ease-in-out; /* Smooth transition for opacity */
+        z-index: 1000;
+    }
+    .trailer-text img {
+        height: 7vh;
+        width: 14vh;
+        display: block;
+    }
+    
+    .trailer-text p {
+        font-size: 0.8rem;
+        line-height: 15px;
+    }
+}
+
+@media (min-height: 375px) and (max-width: 654px) {
+    .trailer{
+    width: 90%; /* or specific width like 500px */
+    height: auto;
+    margin-left: 0;
+
+}
+.trailer-text {
+    height: 10vh; /* Height of the trailer text */
+    width: 30vh; /* Width of the trailer text */
+    z-index: 300;
+    bottom: 25%;
+}
+.trailer-text img {
+    display: block;
+    
+}
+
+.trailer-text p {
+    display: none;
+
+}
+
+.text-btn button {
+    height: 30px; /* Set a fixed height for buttons */
+    font-size: 0.5rem; /* Consistent font size */
+}
+
+#Watch_Btn {
+    font-size: 0.8rem;
+}
+
+#plus_btn {
+    font-size: 1rem; /* Increase font size for the plus icon */
+}
+
+.trailer-text ul {
+    display: none;
+}
+
+.posters{
+    left: 0;
+}
+h2{
+    left: 0;
+}
+h5{
+    right: 90px;
+}
+.card {
+    width: 80px; /* Fixed width for cards */
+    height: 130px; /* Fixed height for cards */
+    margin-right: 10px; /* Space between cards */
+}
+.card img{
+    width: 80px; /* Fixed width for cards */
+    height: 130px; /* Fixed height for cards */
+}
+
+.nav-bar {
+    height: 100vh;
+    width: 80px; /* Initial width */
+}
+.form-check {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: calc(100% - 330px); /* Position 20px above `child2`'s top border */
+    right: 30px;
+    height: 5px;
+    width: auto;
+}
+}
+
+@media(max-width: 375px) {
+    * {
+        animation: none;
+    }
+    .trailer{
+    width: 100%; /* or specific width like 500px */
+    height: auto;
+    animation: none;
+}
+.trailer-text {
+    height: 10vh; /* Height of the trailer text */
+    width: 30vh; /* Width of the trailer text */
+    z-index: 300;
+    bottom: 25%;
+}
+.trailer-text img {
+    display: block;
+    
+}
+
+.trailer-text p {
+    display: none;
+
+}
+
+.text-btn button {
+    height: 30px; /* Set a fixed height for buttons */
+    font-size: 0.5rem; /* Consistent font size */
+}
+
+#Watch_Btn {
+    font-size: 0.6rem;
+}
+
+#plus_btn {
+    font-size: 0.8rem; /* Increase font size for the plus icon */
+}
+
+.trailer-text ul {
+    display: none;
+}
+
+.posters{
+    left: 0;
+}
+h2{
+    left: 0;
+}
+h5{
+    right: 90px;
+}
+.card {
+    width: 80px; /* Fixed width for cards */
+    height: 130px; /* Fixed height for cards */
+    margin-right: 10px; /* Space between cards */
+}
+
+#card5{
+    display: none;
+}
+
+#card6{
+    display: none;
+}
+.card img{
+    width: 80px; /* Fixed width for cards */
+    height: 130px; /* Fixed height for cards */
+}
+
+.nav-bar {
+    height: 100vh;
+    width: 80px; /* Initial width */
+}
+.form-check {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: calc(100% - 430px); /* Position 20px above `child2`'s top border */
+    right: 30px;
+    height: 3px;
+    width: 70%;
+}
+.form-check label{
+    font-size: medium;
+}
+
+.form-check #flexSwitchCheckChecked{
+    width: 20%;
+    height: 100%;
+}
+
+.text{
+    animation: none;
+}
+
+.nav-bar .menu a{
+    animation: none !important;
+}
+
+.subscription h3{
+    animation: none;
+}
+.form-switch{
+    animation: none;
+}
+}
+
+.loader { 
+    position: fixed; /* Cover the whole screen */
+    top: 20%;
+    left: 35%;
+    width: 20vw;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+}
+
+.spinner {
+    border: 4px solid #9400d3; /* Light grey with transparency for the outer border */
+    border-top: 4px solid transparent; /* Make the top transparent */
+    border-radius: 50%;
+    width: 25px; /* Size of the spinner */
+    height: 25px; /* Size of the spinner */
+    animation: none /* Spin animation */
+
+}

@@ -266,6 +266,30 @@ h2 {
     align-items: center; /* Center items vertically */
 }
 
+.slider-icons{
+    transform: scale(2.5);
+    position: absolute;
+    z-index: 9999;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in;
+}
+
+.slider-icons:hover{
+    opacity: 1;
+    
+}
+
+.right, .hrRight, .MCUright, .animeRight, .cartoonRight, .cartoonMoviesRight{
+    right: 8px;
+}
+
+.left, .hrLeft, .MCUleft, .animeLeft, .cartoonLeft, .cartoonMoviesLeft{
+    left: 8px;
+}
+
 .posters img.bhoot {
     width: 20px;
     height: 20px;
@@ -280,12 +304,9 @@ h2 {
 
 
 .card {
-    width: 180px; /* Fixed width for cards */
-    height: 230px; /* Fixed height for cards */
-    margin-right: 10px; /* Space between cards */
-    /* border-radius: 5%; */
-    transition: 1s ease-in;
-    cursor: pointer;
+    width: 180px;
+    height: 230px;
+    margin-right: 14px;
     border-top-left-radius: 25%;
     border-bottom-right-radius: 25%;
     display: flex;
@@ -293,14 +314,40 @@ h2 {
     position: relative;
     z-index: 40;
     box-shadow: 0 0 10px #FFFFFF, 0 0 15px #194e63;
+    transition: transform 1s ease, opacity 0.5s ease; /* Add transition for smooth sliding */
+    opacity: 1;
+    transform: translateX(0);
 }
+
+/* Hidden cards slide to the left and fade out */
+.hidden-card {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease, opacity 0.5s ease;
+}
+
+.hidden-card-left {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease, opacity 0.5s ease;
+}
+
+/* Visible cards slide in from the right */
+.visible-card {
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 1.5s ease, opacity 0.5s ease;
+}
+
 
 .card img{
     object-fit: cover;
     border-top-left-radius: 25%;
     border-bottom-right-radius: 25%;
-
+    width: 180px;
+    height: 233px;
 }
+
 
 #Cards_Watch_Btn {
     position: absolute;

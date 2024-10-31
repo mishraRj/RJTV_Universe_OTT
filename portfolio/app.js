@@ -2,6 +2,14 @@ let spaceShip = document.querySelector('.alien-projector');
 let pfp = document.querySelector('.hologram-container');
 let audio = document.getElementById('backgroundAudio');
 
+window.addEventListener('load', () => {
+    // Delay the content appearance by 2 seconds
+    setTimeout(() => {
+        document.body.style.opacity = "1"; // Trigger fade-in effect
+    }, 1500); // Delay of 2 seconds
+});
+
+
 function appearSpaceship() {
 
     audio.play().catch(error => {
@@ -18,10 +26,10 @@ function appearSpaceship() {
         pfp.style.opacity = "1";
         pfp.style.transition = "2s ease-in";
 
-    }, 8000); // Duration of the appearing animation
+    }, 9000); // Duration of the appearing animation
     setTimeout(() => {
         spaceShip.classList.add('light-beams-visible'); // Add class to show light beams
-    }, 8000);
+    }, 9000);
     
 }
 

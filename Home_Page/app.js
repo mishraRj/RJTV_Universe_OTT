@@ -172,8 +172,6 @@ function playRandomTrailers() {
     };
 }
 
-
-
 // When video ends, it will play the next video
 video.addEventListener('ended', playRandomTrailers);
 

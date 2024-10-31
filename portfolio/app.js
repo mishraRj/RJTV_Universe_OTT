@@ -1,6 +1,7 @@
 let spaceShip = document.querySelector('.alien-projector');
 let pfp = document.querySelector('.hologram-container');
 let audio = document.getElementById('backgroundAudio');
+let alienVoice = document.getElementById('alienVoice');
 
 window.addEventListener('load', () => {
     // Delay the content appearance by 2 seconds
@@ -29,9 +30,25 @@ function appearSpaceship() {
     }, 9000); // Duration of the appearing animation
     setTimeout(() => {
         spaceShip.classList.add('light-beams-visible'); // Add class to show light beams
-    }, 9000);
+    }, 11000);
     
 }
 
 // Call the function when the window loads
 window.onload = appearSpaceship; 
+
+
+spaceShip.addEventListener('click', () => {
+    alienVoice.play().catch(error => {
+        console.error("Audio playback failed: ", error);
+    });
+
+    // Apply the scaleBounce animation for 0.3 seconds
+    spaceShip.style.animation = "scaleBounce 0.9s ease-in-out forwards";
+
+    // Remove the animation after it ends to reset back to initial style
+    spaceShip.addEventListener('animationend', function resetAnimation() {
+        spaceShip.style.animation = ""; // Clear the animation
+        spaceShip.removeEventListener('animationend', resetAnimation); // Remove the listener
+    });
+});

@@ -24,13 +24,13 @@ function appearSpaceship() {
     // After 4 seconds (the duration of the appearing animation), switch to projectorMove
     setTimeout(() => {
         spaceShip.style.animation = 'projectorMove 2s infinite alternate'; // Switch to the projector move animation
-        pfp.style.opacity = "1";
-        pfp.style.transition = "2s ease-in";
 
     }, 9000); // Duration of the appearing animation
     setTimeout(() => {
         spaceShip.classList.add('light-beams-visible'); // Add class to show light beams
-    }, 11000);
+        pfp.style.opacity = "1";
+        pfp.style.transition = "2s ease-in";
+    }, 10000);
     
 }
 

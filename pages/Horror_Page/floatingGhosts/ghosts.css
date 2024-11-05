@@ -1,0 +1,46 @@
+.ghost {
+    position: absolute;
+    z-index: 5000;
+    animation: ghostMove 100s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes ghostMove {
+    0% {
+        transform: translate(0, 0); /* Starting position */
+    }
+    25% {
+        transform: translate(100vw, 0); /* Move to the right */
+    }
+    30% {
+        transform: scaleX(-1); /* Start flipping */
+        transition: transform 0.002s; /* Add a quick transition for the flip */
+    }
+    50% {
+        transform: translate(-100vw, -30vh); /* Move to the left while moving down */
+    }
+    55% {
+        transform: scaleX(1); /* Flip back to original */
+    }
+    75% {
+        transform: translate(100vw, 30vh); /* Move right and down */
+    }
+    80% {
+        transform: scaleX(-1); /* Flip horizontally */
+    }
+    100% {
+        transform: translate(-90vw, -50vh); /* Final position */
+    }
+}
+
+.ghost img {
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 654px) {
+    .ghost {
+        animation: none; /* Disable animation */
+        display: none;
+    }
+}

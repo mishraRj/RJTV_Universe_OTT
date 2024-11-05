@@ -1,0 +1,32 @@
+/* Styling for each "snowflake" element */
+.star {
+    height: 4px; /* Set the height of each star */
+    width: 4px; /* Set the width of each star */
+    background-color: white; /* star color is white */
+    display: inline-block; /* Display stars as small inline elements */
+    border-radius: 50%; /* Make each star circular */
+    position: absolute; /* Position each star independently */
+    top: -10px; /* Start stars slightly off the top of the screen */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); /* Add a glowing effect around each star */
+    animation: fall linear infinite, glow 1.5s ease-in-out infinite alternate; /* Apply two animations: "fall" for falling, and "glow" for pulsing effect */
+    opacity: 0.8; /* Set partial transparency for a softer look */
+    z-index: -1;
+}
+
+/* Animation for snowflake falling down the screen */
+@keyframes fall {
+    0% {
+        transform: translateY(-10px); /* Start off-screen, above the viewport */
+    }
+    100% {
+        transform: translateY(var(--page-height)); /* End position at the bottom of the screen, with distance based on screen height */
+    }
+}
+
+/* Responsive adjustments for smaller screens (under 654px width) */
+@media (max-width: 654px) {
+    .star {
+        animation: none; /* Disable animation on small screens */
+        display: none; /* Hide stars entirely on small screens */
+    }
+}

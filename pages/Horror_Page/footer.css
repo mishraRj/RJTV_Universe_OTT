@@ -1,0 +1,85 @@
+/* Footer Styling */
+footer {
+    background-color: #121212cc;
+    color: white;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px; /* Ensure footer sticks to the bottom */
+    z-index: 1000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #555;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo-section h3 {
+    font-size: 1.8rem;
+    color: #ff00ff; /* Match your glow theme */
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff00ff; /* Hover color for links */
+}
+
+.social-section a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+}
+
+.social-section a:hover {
+    color: #ff00ff; /* Hover color for social icons */
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #222;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+}

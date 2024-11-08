@@ -264,6 +264,7 @@ h2 {
     left: 100px;
     display: flex;
     align-items: center; /* Center items vertically */
+    z-index: 40;
 }
 
 .slider-icons{

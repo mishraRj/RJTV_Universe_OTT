@@ -17,7 +17,7 @@ function generateStars() {
         // Set a random horizontal position across the screen width
         star.style.left = `${Math.random() * 90}vw`; 
         // Set a random animation duration for each snowflake to fall
-        star.style.animationDuration = `${Math.random() * 80 + 65}s`;
+        star.style.animationDuration = `${Math.random() * 200 + 150}s`;
         // Set a random delay to stagger the snowflake starts
         star.style.animationDelay = `${Math.random() * 3}s`;
         

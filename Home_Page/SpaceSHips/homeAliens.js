@@ -46,8 +46,9 @@ for (let i = 0; i < images.length; i++) {
         img.style.height = "250px";
         img.style.opacity = "0.3";
     } else {
-        img.style.width = "70px"; // Default size for other spaceships
-        img.style.height = "70px";
+        let randomSize = `${Math.random() * 80 + 60}px`
+        img.style.width = randomSize; // Default size for other spaceships
+        img.style.height = randomSize;
     }
 
     // Append the image to the spaceship div

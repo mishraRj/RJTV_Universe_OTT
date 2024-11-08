@@ -80,7 +80,8 @@ function showLoader() {
         ghosts.classList.add('spaceShip');
 
         // Set random horizontal position (within 100% width)
-        ghosts.style.left = `${Math.random() * 100}vw`; 
+        ghosts.style.left = `${Math.random() * 100}vw`;
+        ghosts.style.zIndex = '5000'; 
 
         // Set random vertical position (within the total document height)
         ghosts.style.top = `${Math.random() * documentHeight}px`; // Use total document height

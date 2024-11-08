@@ -1,7 +1,7 @@
 /* Styling for each "snowflake" element */
 .star {
-    height: 4px; /* Set the height of each star */
-    width: 4px; /* Set the width of each star */
+    height: 2.5px; /* Set the height of each star */
+    width: 2.5px; /* Set the width of each star */
     background-color: white; /* star color is white */
     display: inline-block; /* Display stars as small inline elements */
     border-radius: 50%; /* Make each star circular */

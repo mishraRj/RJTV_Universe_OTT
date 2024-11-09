@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="trailerStyle.css">
     <link rel="stylesheet" href="./SpaceSHips/homeAliens.css">
     <link rel="stylesheet" href="./ghosts.css">
+    <link rel="stylesheet" href="./homePage_Styles/CSS/tractor_beam.css">
+    <link rel="stylesheet" href="./homePage_Styles/CSS/CStractor_beam.css">
+    <link rel="stylesheet" href="./homePage_Styles/CSS/HrTractor_beam.css">
+
 
     <!-- Favicon -->
     <link rel="icon" href="../Welcome_Imgs/logo.png">
@@ -404,33 +408,82 @@
             </div>
             <br><br><br>
 
+            <!-- Tractor Beam BGM-->
+            <audio id="tractorBeamBGM">
+                <source src="./SpaceSHips/newSpacehip.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
             <h2>Latest Releases</h2>
-            <!-- <a href="#"><h5>...view all...</h5></a> -->
             <br>
             <div class="posters lazy-item">
+                <div class="tractor_beam2">
+                    <img src="./SpaceSHips/Alien2.png" alt="NewSpaceship">
+                </div>
                     <div class="card" id="card1">
                         <img src="./Cards/Latest_Releases/DeadpoolNW.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callSpaceship1()"
+                            >
+                            Watch now
+                        </button>
                     </div>
                     <div class="card" id="card2">
                         <img src="./Cards/Latest_Releases/Agatha.png" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callSpaceship2()"
+                            >
+                            Watch now
+                        </button>
                     </div>
                     <div class="card" id="card3">
                         <img src="./Cards/Latest_Releases/DB.png" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callSpaceship3()"
+                            >
+                            Watch now
+                        </button>
                     </div>
                     <div class="card" id="card4">
                         <img src="./Cards/Latest_Releases/HoneyBunny.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callSpaceship4()"
+                            >
+                            Watch now
+                        </button>
                     </div>
                     <div class="card" id="card5">
                         <img src="./Cards/Latest_Releases/Devra.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callSpaceship5()"
+                            >
+                            Watch now
+                        </button>
                     </div>
                     <div class="card" id="card6">
                         <img src="./Cards/Latest_Releases/Joker.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callSpaceship6()"
+                            >
+                            Watch now
+                        </button>
                     </div>
             </div>
             <br><br><br>
@@ -439,116 +492,295 @@
             <a href="#"><h5>...view all...</h5></a>
             <br>
             <div class="posters lazy-item">
+                <div class="tractor_beam3">
+                    <img src="./SpaceSHips/Alien3.png" alt="NewSpaceship">
+                </div>
                 <i class="fa-solid right fa-circle-arrow-right slider-icons"></i>
-                    <div class="card CScard1" id="card1">
+                    <div class="card CScard1" id="CScard1">
                         <img src="./Cards/Coming_Soon/Singham_Again.jpeg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch trailer</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCSSpaceship1()"
+                            >
+                            Watch trailer
+                        </button>
                     </div>
-                    <div class="card CScard2" id="card2">
+                    <div class="card CScard2" id="CScard2">
                         <img src="./Cards/Coming_Soon/Venom3.jpeg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch trailer</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCSSpaceship2()"
+                            >
+                            Watch trailer
+                        </button>
                     </div>
-                    <div class="card CScard3" id="card3">
+                    <div class="card CScard3" id="CScard3">
                         <img src="./Cards/Coming_Soon/BhulBhulaiya3.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch trailer</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCSSpaceship3()"
+                            >
+                            Watch trailer
+                        </button>
                     </div>
-                    <div class="card CScard4" id="card4">
+                    <div class="card CScard4" id="CScard4">
                         <img src="./Cards/Coming_Soon/kraven.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCSSpaceship4()"
+                            >
+                            Watch trailer
+                        </button>
                     </div>
-                    <div class="card CScard5" id="card5">
+                    <div class="card CScard5" id="CScard5">
                         <img src="./Cards/Coming_Soon/welcomeToJungle.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCSSpaceship5()"
+                            >
+                            Watch trailer
+                        </button>
                     </div>
-                    <div class="card CScard6" id="card6">
+                    <div class="card CScard6" id="CScard6">
                         <img src="./Cards/Coming_Soon/pushpa2.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCSSpaceship6()"
+                            >
+                            Watch trailer
+                        </button>
                     </div>
-                    <div class="card CScard7" id="card7">
+                    <div class="card CScard7" id="CScard7">
                         <img src="./Cards/Coming_Soon/Chaava.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCSSpaceship7()"
+                            >
+                            Watch trailer
+                        </button>
                     </div>
-                    <div class="card CScard8" id="card8">
+                    <div class="card CScard8" id="CScard8">
                         <img src="./Cards/Coming_Soon/redOne.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCSSpaceship8()"
+                            >
+                            Watch trailer
+                        </button>
                     </div>
-                    <div class="card CScard9" id="card9">
+                    <div class="card CScard9" id="CScard9">
                         <img src="./Cards/Coming_Soon/mufasa.jpeg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCSSpaceship9()"
+                            >
+                            Watch trailer
+                        </button>
                     </div>
-                    <div class="card CScard10" id="card10">
+                    <div class="card CScard10" id="CScard10">
                         <img src="./Cards/Coming_Soon/vAndV.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCSSpaceship10()"
+                            >
+                            Watch trailer
+                        </button>
                     </div>
-                    <div class="card CScard11" id="card11">
+                    <div class="card CScard11" id="CScard11">
                         <img src="./Cards/Coming_Soon/kanguva.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCSSpaceship11()"
+                            >
+                            Watch trailer
+                        </button>
                     </div>
-                    <div class="card CScard12" id="card12">
+                    <div class="card CScard12" id="CScard12">
                         <img src="./Cards/Coming_Soon/babyJohn.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCSSpaceship12()"
+                            >
+                            Watch trailer
+                        </button>
                     </div>
                 <i class="fa-solid left fa-circle-arrow-left slider-icons"></i>
             </div>
-
             <br><br><br>
+
+            <!-- Horror UFO BGM-->
+            <audio id="horrorUfoBGM">
+                <source src="./SpaceSHips/horrorBGM.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
             <h2>Terrifying Thrillers</h2>
             <h5 class="horror_btn" onclick="showLoader();">&#128128;...view all...&#128128;</h5>
             <br>
             <div class="posters lazy-item btn_div">
+                <div class="tractor_beam4">
+                    <img src="./SpaceSHips/ghostSpacehip.jpeg" alt="NewSpaceship">
+                </div>
                 <i class="fa-solid hrRight fa-circle-arrow-right slider-icons"></i>
                     <img src="./Cards/horror_Movies/abc/a2.png" alt="img" class="bhoot">
                     <audio id="backgroundAudio">
                         <source src="./Cards/horror_Movies/Horror_Audio1.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
-                        <div class="card hrCard1" id="card1">
+                        <div class="card hrCard1" id="hrcard1">
                             <img src="./Cards/horror_Movies/nun.jpeg" alt="img">
-                            <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                            <button 
+                                class="btn btn-secondary"
+                                id = "Cards_Watch_Btn" 
+                                type="button"
+                                onclick="callHrSpaceship1()"
+                                >
+                                Watch now
+                            </button>
                         </div>
-                        <div class="card hrCard2" id="card2">
+                        <div class="card hrCard2" id="hrcard2">
                             <img src="./Cards/horror_Movies/conjuring.jpg" alt="img">
-                            <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                            <button 
+                                class="btn btn-secondary"
+                                id = "Cards_Watch_Btn" 
+                                type="button"
+                                onclick="callHrSpaceship2()"
+                                >
+                                Watch now
+                            </button>
                         </div>
-                        <div class="card hrCard3" id="card3">
+                        <div class="card hrCard3" id="hrcard3">
                             <img src="./Cards/horror_Movies/1920.jpg" alt="img">
-                            <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                            <button 
+                                class="btn btn-secondary"
+                                id = "Cards_Watch_Btn" 
+                                type="button"
+                                onclick="callHrSpaceship3()"
+                                >
+                                Watch now
+                            </button>
                         </div>
-                        <div class="card hrCard4" id="card4">
+                        <div class="card hrCard4" id="hrcard4">
                             <img src="./Cards/horror_Movies/it.jpg" alt="img">
-                            <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                            <button 
+                                class="btn btn-secondary"
+                                id = "Cards_Watch_Btn" 
+                                type="button"
+                                onclick="callHrSpaceship4()"
+                                >
+                                Watch now
+                            </button>
                         </div>
-                        <div class="card hrCard5" id="card5">
+                        <div class="card hrCard5" id="hrcard5">
                             <img src="./Cards/horror_Movies/haunted.jpg" alt="img">
-                            <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                            <button 
+                                class="btn btn-secondary"
+                                id = "Cards_Watch_Btn" 
+                                type="button"
+                                onclick="callHrSpaceship5()"
+                                >
+                                Watch now
+                            </button>
                         </div>
-                        <div class="card hrCard6" id="card6">
+                        <div class="card hrCard6" id="hrcard6">
                             <img src="./Cards/horror_Movies/wrongTurn.jpg" alt="img">
-                            <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                            <button 
+                                class="btn btn-secondary"
+                                id = "Cards_Watch_Btn" 
+                                type="button"
+                                onclick="callHrSpaceship6()"
+                                >
+                                Watch now
+                            </button>
                         </div>
-                        <div class="card hrCard7" id="card7">
+                        <div class="card hrCard7" id="hrcard7">
                             <img src="./Cards/horror_Movies/1920org.jpg" alt="img">
-                            <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                            <button 
+                                class="btn btn-secondary"
+                                id = "Cards_Watch_Btn" 
+                                type="button"
+                                onclick="callHrSpaceship7()"
+                                >
+                                Watch now
+                            </button>
                         </div>
-                        <div class="card hrCard8" id="card8">
+                        <div class="card hrCard8" id="hrcard8">
                             <img src="./Cards/horror_Movies/anabbele.jpg" alt="img">
-                            <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                            <button 
+                                class="btn btn-secondary"
+                                id = "Cards_Watch_Btn" 
+                                type="button"
+                                onclick="callHrSpaceship8()"
+                                >
+                                Watch now
+                            </button>
                         </div>
-                        <div class="card hrCard9" id="card9">
+                        <div class="card hrCard9" id="hrcard9">
                             <img src="./Cards/horror_Movies/don'tSpeak.jpg" alt="img">
-                            <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                            <button 
+                                class="btn btn-secondary"
+                                id = "Cards_Watch_Btn" 
+                                type="button"
+                                onclick="callHrSpaceship9()"
+                                >
+                                Watch now
+                            </button>
                         </div>
-                        <div class="card hrCard10" id="card10">
+                        <div class="card hrCard10" id="hrcard10">
                             <img src="./Cards/horror_Movies/EvilDead.jpg" alt="img">
-                            <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                            <button 
+                                class="btn btn-secondary"
+                                id = "Cards_Watch_Btn" 
+                                type="button"
+                                onclick="callHrSpaceship10()"
+                                >
+                                Watch now
+                            </button>
                         </div>
-                        <div class="card hrCard11" id="card11">
+                        <div class="card hrCard11" id="hrcard11">
                             <img src="./Cards/horror_Movies/1920hearts.jpg" alt="img">
-                            <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                            <button 
+                                class="btn btn-secondary"
+                                id = "Cards_Watch_Btn" 
+                                type="button"
+                                onclick="callHrSpaceship11()"
+                                >
+                                Watch now
+                            </button>
                         </div>
-                        <div class="card hrCard12" id="card12">
+                        <div class="card hrCard12" id="hrcard12">
                             <img src="./Cards/horror_Movies/the-exorcist_u-L-Q1RLWIV0.jpg" alt="img">
-                            <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                            <button 
+                                class="btn btn-secondary"
+                                id = "Cards_Watch_Btn" 
+                                type="button"
+                                onclick="callHrSpaceship12()"
+                                >
+                                Watch now
+                            </button>
                         </div>
                 <i class="fa-solid hrLeft fa-circle-arrow-left slider-icons"></i>
             </div>
@@ -846,8 +1078,12 @@
         <script src="./SpaceSHips/homeAliens.js"></script>
         <script src="./ghost.js"></script>
         <script src="./slider.js"></script>
+        <script src="./homePage_Styles/JS/tractor_Beam.js"></script>
+        <script src="./homePage_Styles/JS/CStractor_beam.js"></script>
+        <script src="./homePage_Styles/JS/HrTractor_beam.js"></script>
         <script src="app.js"></script>
-        <script>
+
+        <!-- <script>
             // Select all elements with the class 'btn'
             const buttons = document.querySelectorAll('.btn');
             
@@ -858,7 +1094,7 @@
                     window.open('./construction.html', '_blank');
                 });
             });
-        </script>
+        </script> -->
         
 </body>
 </html>

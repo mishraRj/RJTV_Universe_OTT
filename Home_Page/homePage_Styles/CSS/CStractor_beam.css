@@ -1,0 +1,178 @@
+/* Position and style for the tractor beam */
+.tractor_beam3 {
+    position: absolute;
+    opacity: 0;
+    width: 500px;
+    height: 500px;
+    left: -60px;
+    top: -150%;
+    display: flex;
+    transform: translate(-100%, -10%);
+    transition: transform 4s ease-out, opacity 4s ease; /* Smooth transitions */
+    z-index: 5000;
+}
+
+.tractor_beam3 img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    z-index: 5000;
+}
+
+
+/* Apply animation class when button is clicked */
+.tractor_beam3.enter1 {
+    transform: translate(0, 0); /* Target position on screen */
+    opacity: 1;
+    transition: transform 4s ease, opacity 4s ease; /* Smooth transition */
+}
+
+/* Apply animation class when button is clicked */
+.tractor_beam3.enter2 {
+    transform: translate(38%, 0); /* Target position on screen */
+    opacity: 1;
+    transition: transform 4s ease, opacity 4s ease; /* Smooth transition */
+}
+
+/* Apply animation class when button is clicked */
+.tractor_beam3.enter3 {
+    transform: translate(77%, 0); /* Target position on screen */
+    opacity: 1;
+    transition: transform 4s ease, opacity 4s ease; /* Smooth transition */
+}
+
+/* Apply animation class when button is clicked */
+.tractor_beam3.enter4 {
+    transform: translate(114%, 0); /* Target position on screen */
+    opacity: 1;
+    transition: transform 4s ease, opacity 4s ease; /* Smooth transition */
+}
+
+/* Apply animation class when button is clicked */
+.tractor_beam3.enter5 {
+    transform: translate(153%, 0); /* Target position on screen */
+    opacity: 1;
+    transition: transform 4s ease, opacity 4s ease; /* Smooth transition */
+}
+
+/* Apply animation class when button is clicked */
+.tractor_beam3.enter6 {
+    transform: translate(192%, 0); /* Target position on screen */
+    opacity: 1;
+    transition: transform 4s ease, opacity 4s ease; /* Smooth transition */
+}
+
+/* Neon beam animation with falling effect */
+.tractor_beam3.beam-active::after {
+    content: "";
+    position: absolute;
+    width: 100px; /* Beam width */
+    height: 300px; /* Beam height */
+    top: 200px; /* Positioning the beam just below the spaceship */
+    left: 100px;
+    background: rgba(58, 174, 255, 0.2); /* Neon blue color */
+    filter: blur(25px); /* Blurry effect */
+    box-shadow: 0 0 30px rgb(58, 173, 255), 
+                0 0 40px rgba(58, 173, 255, 0.84),
+                0 0 80px rgba(58, 173, 255, 0.441);
+    animation: beamFall 1s ease forwards; /* Falling effect animation */
+    transform-origin: top; /* Start scale animation from the top */
+    transform: scaleY(0); /* Start from zero height */
+}
+
+/* Keyframes for falling effect */
+@keyframes beamFall {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1); /* Full height */
+    }
+}
+
+/* Move spaceship to the right */
+.tractor_beam3.move-right {
+    transform: translateX(100vw); /* Moves spaceship off the screen to the right */
+    opacity: 0;
+    transition: transform 4s ease-out, 1.5s opacity ease-in;
+}
+
+/* Disable the beam animation once the sample moves */
+.tractor_beam3.remove-beam::after {
+    animation: none; /* Disable the beam animation */
+}
+
+/* Animation to move .cards upwards */
+#CScard1.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#CScard2.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#CScard3.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#CScard4.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#CScard5.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#CScard6.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+/* Animation to move .cards upwards */
+#CScard7.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#CScard8.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#CScard9.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#CScard10.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#CScard11.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#CScard12.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}

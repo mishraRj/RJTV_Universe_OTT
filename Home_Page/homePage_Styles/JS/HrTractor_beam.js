@@ -21,7 +21,9 @@ function callHrSpaceship1() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship4.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -51,6 +53,9 @@ function callHrSpaceship2() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship4.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
             }, 2500); // Time for sample to fully move up
         }, 1000); // 1s delay to start .sample moving up after beam appears
     }, 4000); // Matches the 4s transition time for spaceship appearance
@@ -77,7 +82,9 @@ function callHrSpaceship3() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship4.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -107,7 +114,9 @@ function callHrSpaceship4() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship4.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -137,7 +146,9 @@ function callHrSpaceship5() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship4.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -167,7 +178,9 @@ function callHrSpaceship6() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship4.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -197,7 +210,9 @@ function callHrSpaceship7() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship4.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -227,6 +242,9 @@ function callHrSpaceship8() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship4.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
             }, 2500); // Time for sample to fully move up
         }, 1000); // 1s delay to start .sample moving up after beam appears
     }, 4000); // Matches the 4s transition time for spaceship appearance
@@ -253,8 +271,9 @@ function callHrSpaceship9() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship4.classList.add('move-right');
-                
-
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
             }, 2500); // Time for sample to fully move up
 
         }, 1000); // 1s delay to start .sample moving up after beam appears
@@ -283,7 +302,9 @@ function callHrSpaceship10() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship4.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -313,7 +334,9 @@ function callHrSpaceship11() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship4.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -343,7 +366,9 @@ function callHrSpaceship12() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship4.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 

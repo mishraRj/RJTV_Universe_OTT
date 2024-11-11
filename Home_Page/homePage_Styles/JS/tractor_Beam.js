@@ -20,9 +20,12 @@ function callSpaceship1() {
                 spaceship.classList.add('remove-beam'); // Remove the falling beam animation
                 
                 // After .sample has moved up, move spaceship to the right
-                    spaceship.classList.add('move-right');
-                
-
+                spaceship.classList.add('move-right');
+                setTimeout(() =>{
+                    window.location.href = './construction.html';
+                }, 1500)
+                    
+                    
             }, 2500); // Time for sample to fully move up
 
         }, 1000); // 1s delay to start .sample moving up after beam appears
@@ -51,6 +54,9 @@ function callSpaceship2() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
             }, 2500); // Time for sample to fully move up
         }, 1000); // 1s delay to start .sample moving up after beam appears
     }, 4000); // Matches the 4s transition time for spaceship appearance
@@ -77,6 +83,9 @@ function callSpaceship3() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
                 
 
             }, 2500); // Time for sample to fully move up
@@ -107,6 +116,9 @@ function callSpaceship4() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
                 
 
             }, 2500); // Time for sample to fully move up
@@ -137,6 +149,9 @@ function callSpaceship5() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
                 
 
             }, 2500); // Time for sample to fully move up
@@ -167,6 +182,9 @@ function callSpaceship6() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
                 
 
             }, 2500); // Time for sample to fully move up

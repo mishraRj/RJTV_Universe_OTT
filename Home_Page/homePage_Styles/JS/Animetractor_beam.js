@@ -1,15 +1,15 @@
-const spaceship4 = document.querySelector('.tractor_beam4');
-const hRbgm = document.getElementById('horrorUfoBGM');
-function callHrSpaceship1() {
-    const sample = document.getElementById('hrcard1');
-    // Add 'enter' class to start spaceship animation
-    spaceship4.classList.add('enter1');
+const spaceship6 = document.querySelector('.tractor_beam6');
 
-    hRbgm.play();
+function callAnimeSpaceship1() {
+    const sample = document.getElementById('Animecard1');
+    // Add 'enter' class to start spaceship animation
+    spaceship6.classList.add('enter1');
+
+    bgm.play();
     
     // Delay adding 'beam-active' class and starting the beam animation
     setTimeout(() => {
-        spaceship4.classList.add('beam-active');
+        spaceship6.classList.add('beam-active');
         
         // Delay for the .sample div to move up and fade out after the beam appears
         setTimeout(() => {
@@ -17,10 +17,10 @@ function callHrSpaceship1() {
             
             // After .sample has moved up, remove the beam animation
             setTimeout(() => {
-                spaceship4.classList.add('remove-beam'); // Remove the falling beam animation
+                spaceship6.classList.add('remove-beam'); // Remove the falling beam animation
                 
                 // After .sample has moved up, move spaceship to the right
-                    spaceship4.classList.add('move-right');
+                    spaceship6.classList.add('move-right');
                 
 
             }, 2500); // Time for sample to fully move up
@@ -30,16 +30,16 @@ function callHrSpaceship1() {
     }, 4000); // Matches the 4s transition time for spaceship appearance
 }
 
-function callHrSpaceship2() {
-    const sample = document.getElementById('hrcard2');
+function callAnimeSpaceship2() {
+    const sample = document.getElementById('Animecard2');
     // Add 'enter' class to start spaceship animation
-    spaceship4.classList.add('enter2');
+    spaceship6.classList.add('enter2');
 
-    hRbgm.play();
+    bgm.play();
     
     // Delay adding 'beam-active' class and starting the beam animation
     setTimeout(() => {
-        spaceship4.classList.add('beam-active');
+        spaceship6.classList.add('beam-active');
         
         // Delay for the .sample div to move up and fade out after the beam appears
         setTimeout(() => {
@@ -47,25 +47,25 @@ function callHrSpaceship2() {
             
             // After .sample has moved up, remove the beam animation
             setTimeout(() => {
-                spaceship4.classList.add('remove-beam'); // Remove the falling beam animation
+                spaceship6.classList.add('remove-beam'); // Remove the falling beam animation
                 
                 // After .sample has moved up, move spaceship to the right
-                    spaceship4.classList.add('move-right');
+                    spaceship6.classList.add('move-right');
             }, 2500); // Time for sample to fully move up
         }, 1000); // 1s delay to start .sample moving up after beam appears
     }, 4000); // Matches the 4s transition time for spaceship appearance
 }
 
-function callHrSpaceship3() {
-    const sample = document.getElementById('hrcard3');
+function callAnimeSpaceship3() {
+    const sample = document.getElementById('Animecard3');
     // Add 'enter' class to start spaceship animation
-    spaceship4.classList.add('enter3');
+    spaceship6.classList.add('enter3');
 
-    hRbgm.play();
+    bgm.play();
     
     // Delay adding 'beam-active' class and starting the beam animation
     setTimeout(() => {
-        spaceship4.classList.add('beam-active');
+        spaceship6.classList.add('beam-active');
         
         // Delay for the .sample div to move up and fade out after the beam appears
         setTimeout(() => {
@@ -73,40 +73,10 @@ function callHrSpaceship3() {
             
             // After .sample has moved up, remove the beam animation
             setTimeout(() => {
-                spaceship4.classList.add('remove-beam'); // Remove the falling beam animation
+                spaceship6.classList.add('remove-beam'); // Remove the falling beam animation
                 
                 // After .sample has moved up, move spaceship to the right
-                    spaceship4.classList.add('move-right');
-                
-
-            }, 2500); // Time for sample to fully move up
-
-        }, 1000); // 1s delay to start .sample moving up after beam appears
-
-    }, 4000); // Matches the 4s transition time for spaceship appearance
-}
-
-function callHrSpaceship4() {
-    const sample = document.getElementById('hrcard4');
-    // Add 'enter' class to start spaceship animation
-    spaceship4.classList.add('enter4');
-
-    hRbgm.play();
-    
-    // Delay adding 'beam-active' class and starting the beam animation
-    setTimeout(() => {
-        spaceship4.classList.add('beam-active');
-        
-        // Delay for the .sample div to move up and fade out after the beam appears
-        setTimeout(() => {
-            sample.classList.add('move-up');
-            
-            // After .sample has moved up, remove the beam animation
-            setTimeout(() => {
-                spaceship4.classList.add('remove-beam'); // Remove the falling beam animation
-                
-                // After .sample has moved up, move spaceship to the right
-                    spaceship4.classList.add('move-right');
+                    spaceship6.classList.add('move-right');
                 
 
             }, 2500); // Time for sample to fully move up
@@ -116,16 +86,16 @@ function callHrSpaceship4() {
     }, 4000); // Matches the 4s transition time for spaceship appearance
 }
 
-function callHrSpaceship5() {
-    const sample = document.getElementById('hrcard5');
+function callAnimeSpaceship4() {
+    const sample = document.getElementById('Animecard4');
     // Add 'enter' class to start spaceship animation
-    spaceship4.classList.add('enter5');
+    spaceship6.classList.add('enter4');
 
-    hRbgm.play();
+    bgm.play();
     
     // Delay adding 'beam-active' class and starting the beam animation
     setTimeout(() => {
-        spaceship4.classList.add('beam-active');
+        spaceship6.classList.add('beam-active');
         
         // Delay for the .sample div to move up and fade out after the beam appears
         setTimeout(() => {
@@ -133,10 +103,10 @@ function callHrSpaceship5() {
             
             // After .sample has moved up, remove the beam animation
             setTimeout(() => {
-                spaceship4.classList.add('remove-beam'); // Remove the falling beam animation
+                spaceship6.classList.add('remove-beam'); // Remove the falling beam animation
                 
                 // After .sample has moved up, move spaceship to the right
-                    spaceship4.classList.add('move-right');
+                    spaceship6.classList.add('move-right');
                 
 
             }, 2500); // Time for sample to fully move up
@@ -146,16 +116,16 @@ function callHrSpaceship5() {
     }, 4000); // Matches the 4s transition time for spaceship appearance
 }
 
-function callHrSpaceship6() {
-    const sample = document.getElementById('hrcard6');
+function callAnimeSpaceship5() {
+    const sample = document.getElementById('Animecard5');
     // Add 'enter' class to start spaceship animation
-    spaceship4.classList.add('enter6');
+    spaceship6.classList.add('enter5');
 
-    hRbgm.play();
+    bgm.play();
     
     // Delay adding 'beam-active' class and starting the beam animation
     setTimeout(() => {
-        spaceship4.classList.add('beam-active');
+        spaceship6.classList.add('beam-active');
         
         // Delay for the .sample div to move up and fade out after the beam appears
         setTimeout(() => {
@@ -163,10 +133,10 @@ function callHrSpaceship6() {
             
             // After .sample has moved up, remove the beam animation
             setTimeout(() => {
-                spaceship4.classList.add('remove-beam'); // Remove the falling beam animation
+                spaceship6.classList.add('remove-beam'); // Remove the falling beam animation
                 
                 // After .sample has moved up, move spaceship to the right
-                    spaceship4.classList.add('move-right');
+                    spaceship6.classList.add('move-right');
                 
 
             }, 2500); // Time for sample to fully move up
@@ -176,16 +146,16 @@ function callHrSpaceship6() {
     }, 4000); // Matches the 4s transition time for spaceship appearance
 }
 
-function callHrSpaceship7() {
-    const sample = document.getElementById('hrcard7');
+function callAnimeSpaceship6() {
+    const sample = document.getElementById('Animecard6');
     // Add 'enter' class to start spaceship animation
-    spaceship4.classList.add('enter1');
+    spaceship6.classList.add('enter6');
 
-    hRbgm.play();
+    bgm.play();
     
     // Delay adding 'beam-active' class and starting the beam animation
     setTimeout(() => {
-        spaceship4.classList.add('beam-active');
+        spaceship6.classList.add('beam-active');
         
         // Delay for the .sample div to move up and fade out after the beam appears
         setTimeout(() => {
@@ -193,10 +163,10 @@ function callHrSpaceship7() {
             
             // After .sample has moved up, remove the beam animation
             setTimeout(() => {
-                spaceship4.classList.add('remove-beam'); // Remove the falling beam animation
+                spaceship6.classList.add('remove-beam'); // Remove the falling beam animation
                 
                 // After .sample has moved up, move spaceship to the right
-                    spaceship4.classList.add('move-right');
+                    spaceship6.classList.add('move-right');
                 
 
             }, 2500); // Time for sample to fully move up
@@ -206,16 +176,16 @@ function callHrSpaceship7() {
     }, 4000); // Matches the 4s transition time for spaceship appearance
 }
 
-function callHrSpaceship8() {
-    const sample = document.getElementById('hrcard8');
+function callAnimeSpaceship7() {
+    const sample = document.getElementById('Animecard7');
     // Add 'enter' class to start spaceship animation
-    spaceship4.classList.add('enter2');
+    spaceship6.classList.add('enter1');
 
-    hRbgm.play();
+    bgm.play();
     
     // Delay adding 'beam-active' class and starting the beam animation
     setTimeout(() => {
-        spaceship4.classList.add('beam-active');
+        spaceship6.classList.add('beam-active');
         
         // Delay for the .sample div to move up and fade out after the beam appears
         setTimeout(() => {
@@ -223,36 +193,10 @@ function callHrSpaceship8() {
             
             // After .sample has moved up, remove the beam animation
             setTimeout(() => {
-                spaceship4.classList.add('remove-beam'); // Remove the falling beam animation
+                spaceship6.classList.add('remove-beam'); // Remove the falling beam animation
                 
                 // After .sample has moved up, move spaceship to the right
-                    spaceship4.classList.add('move-right');
-            }, 2500); // Time for sample to fully move up
-        }, 1000); // 1s delay to start .sample moving up after beam appears
-    }, 4000); // Matches the 4s transition time for spaceship appearance
-}
-
-function callHrSpaceship9() {
-    const sample = document.getElementById('hrcard9');
-    // Add 'enter' class to start spaceship animation
-    spaceship4.classList.add('enter3');
-
-    hRbgm.play();
-    
-    // Delay adding 'beam-active' class and starting the beam animation
-    setTimeout(() => {
-        spaceship4.classList.add('beam-active');
-        
-        // Delay for the .sample div to move up and fade out after the beam appears
-        setTimeout(() => {
-            sample.classList.add('move-up');
-            
-            // After .sample has moved up, remove the beam animation
-            setTimeout(() => {
-                spaceship4.classList.add('remove-beam'); // Remove the falling beam animation
-                
-                // After .sample has moved up, move spaceship to the right
-                    spaceship4.classList.add('move-right');
+                    spaceship6.classList.add('move-right');
                 
 
             }, 2500); // Time for sample to fully move up
@@ -262,16 +206,16 @@ function callHrSpaceship9() {
     }, 4000); // Matches the 4s transition time for spaceship appearance
 }
 
-function callHrSpaceship10() {
-    const sample = document.getElementById('hrcard10');
+function callAnimeSpaceship8() {
+    const sample = document.getElementById('Animecard8');
     // Add 'enter' class to start spaceship animation
-    spaceship4.classList.add('enter4');
+    spaceship6.classList.add('enter2');
 
-    hRbgm.play();
+    bgm.play();
     
     // Delay adding 'beam-active' class and starting the beam animation
     setTimeout(() => {
-        spaceship4.classList.add('beam-active');
+        spaceship6.classList.add('beam-active');
         
         // Delay for the .sample div to move up and fade out after the beam appears
         setTimeout(() => {
@@ -279,10 +223,36 @@ function callHrSpaceship10() {
             
             // After .sample has moved up, remove the beam animation
             setTimeout(() => {
-                spaceship4.classList.add('remove-beam'); // Remove the falling beam animation
+                spaceship6.classList.add('remove-beam'); // Remove the falling beam animation
                 
                 // After .sample has moved up, move spaceship to the right
-                    spaceship4.classList.add('move-right');
+                    spaceship6.classList.add('move-right');
+            }, 2500); // Time for sample to fully move up
+        }, 1000); // 1s delay to start .sample moving up after beam appears
+    }, 4000); // Matches the 4s transition time for spaceship appearance
+}
+
+function callAnimeSpaceship9() {
+    const sample = document.getElementById('Animecard9');
+    // Add 'enter' class to start spaceship animation
+    spaceship6.classList.add('enter3');
+
+    bgm.play();
+    
+    // Delay adding 'beam-active' class and starting the beam animation
+    setTimeout(() => {
+        spaceship6.classList.add('beam-active');
+        
+        // Delay for the .sample div to move up and fade out after the beam appears
+        setTimeout(() => {
+            sample.classList.add('move-up');
+            
+            // After .sample has moved up, remove the beam animation
+            setTimeout(() => {
+                spaceship6.classList.add('remove-beam'); // Remove the falling beam animation
+                
+                // After .sample has moved up, move spaceship to the right
+                    spaceship6.classList.add('move-right');
                 
 
             }, 2500); // Time for sample to fully move up
@@ -292,16 +262,16 @@ function callHrSpaceship10() {
     }, 4000); // Matches the 4s transition time for spaceship appearance
 }
 
-function callHrSpaceship11() {
-    const sample = document.getElementById('hrcard11');
+function callAnimeSpaceship10() {
+    const sample = document.getElementById('Animecard10');
     // Add 'enter' class to start spaceship animation
-    spaceship4.classList.add('enter5');
+    spaceship6.classList.add('enter4');
 
-    hRbgm.play();
+    bgm.play();
     
     // Delay adding 'beam-active' class and starting the beam animation
     setTimeout(() => {
-        spaceship4.classList.add('beam-active');
+        spaceship6.classList.add('beam-active');
         
         // Delay for the .sample div to move up and fade out after the beam appears
         setTimeout(() => {
@@ -309,10 +279,10 @@ function callHrSpaceship11() {
             
             // After .sample has moved up, remove the beam animation
             setTimeout(() => {
-                spaceship4.classList.add('remove-beam'); // Remove the falling beam animation
+                spaceship6.classList.add('remove-beam'); // Remove the falling beam animation
                 
                 // After .sample has moved up, move spaceship to the right
-                    spaceship4.classList.add('move-right');
+                    spaceship6.classList.add('move-right');
                 
 
             }, 2500); // Time for sample to fully move up
@@ -322,16 +292,16 @@ function callHrSpaceship11() {
     }, 4000); // Matches the 4s transition time for spaceship appearance
 }
 
-function callHrSpaceship12() {
-    const sample = document.getElementById('hrcard12');
+function callAnimeSpaceship11() {
+    const sample = document.getElementById('Animecard11');
     // Add 'enter' class to start spaceship animation
-    spaceship4.classList.add('enter6');
+    spaceship6.classList.add('enter5');
 
-    hRbgm.play();
+    bgm.play();
     
     // Delay adding 'beam-active' class and starting the beam animation
     setTimeout(() => {
-        spaceship4.classList.add('beam-active');
+        spaceship6.classList.add('beam-active');
         
         // Delay for the .sample div to move up and fade out after the beam appears
         setTimeout(() => {
@@ -339,10 +309,40 @@ function callHrSpaceship12() {
             
             // After .sample has moved up, remove the beam animation
             setTimeout(() => {
-                spaceship4.classList.add('remove-beam'); // Remove the falling beam animation
+                spaceship6.classList.add('remove-beam'); // Remove the falling beam animation
                 
                 // After .sample has moved up, move spaceship to the right
-                    spaceship4.classList.add('move-right');
+                    spaceship6.classList.add('move-right');
+                
+
+            }, 2500); // Time for sample to fully move up
+
+        }, 1000); // 1s delay to start .sample moving up after beam appears
+
+    }, 4000); // Matches the 4s transition time for spaceship appearance
+}
+
+function callAnimeSpaceship12() {
+    const sample = document.getElementById('Animecard12');
+    // Add 'enter' class to start spaceship animation
+    spaceship6.classList.add('enter6');
+
+    bgm.play();
+    
+    // Delay adding 'beam-active' class and starting the beam animation
+    setTimeout(() => {
+        spaceship6.classList.add('beam-active');
+        
+        // Delay for the .sample div to move up and fade out after the beam appears
+        setTimeout(() => {
+            sample.classList.add('move-up');
+            
+            // After .sample has moved up, remove the beam animation
+            setTimeout(() => {
+                spaceship6.classList.add('remove-beam'); // Remove the falling beam animation
+                
+                // After .sample has moved up, move spaceship to the right
+                    spaceship6.classList.add('move-right');
                 
 
             }, 2500); // Time for sample to fully move up

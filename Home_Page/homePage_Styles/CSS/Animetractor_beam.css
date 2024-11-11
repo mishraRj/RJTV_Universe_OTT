@@ -1,20 +1,20 @@
 /* Position and style for the tractor beam */
-.tractor_beam2 {
+.tractor_beam6 {
     position: absolute;
     opacity: 0;
     width: 500px;
     height: 500px;
     left: -60px;
-    top: -130%;
+    top: -150%;
     display: flex;
     transform: translate(-100%, -10%);
     transition: transform 4s ease-out, opacity 4s ease; /* Smooth transitions */
     z-index: 5000;
 }
 
-.tractor_beam2 img {
-    width: 280px;
-    height: 280px;
+.tractor_beam6 img {
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     position: relative;
     z-index: 5000;
@@ -22,49 +22,49 @@
 
 
 /* Apply animation class when button is clicked */
-.tractor_beam2.enter1 {
+.tractor_beam6.enter1 {
     transform: translate(0, 0); /* Target position on screen */
     opacity: 1;
     transition: transform 4s ease, opacity 4s ease; /* Smooth transition */
 }
 
 /* Apply animation class when button is clicked */
-.tractor_beam2.enter2 {
-    transform: translate(40%, 0); /* Target position on screen */
+.tractor_beam6.enter2 {
+    transform: translate(38%, 0); /* Target position on screen */
     opacity: 1;
     transition: transform 4s ease, opacity 4s ease; /* Smooth transition */
 }
 
 /* Apply animation class when button is clicked */
-.tractor_beam2.enter3 {
-    transform: translate(80%, 0); /* Target position on screen */
+.tractor_beam6.enter3 {
+    transform: translate(77%, 0); /* Target position on screen */
     opacity: 1;
     transition: transform 4s ease, opacity 4s ease; /* Smooth transition */
 }
 
 /* Apply animation class when button is clicked */
-.tractor_beam2.enter4 {
-    transform: translate(116%, 0); /* Target position on screen */
+.tractor_beam6.enter4 {
+    transform: translate(114%, 0); /* Target position on screen */
     opacity: 1;
     transition: transform 4s ease, opacity 4s ease; /* Smooth transition */
 }
 
 /* Apply animation class when button is clicked */
-.tractor_beam2.enter5 {
-    transform: translate(155%, 0); /* Target position on screen */
+.tractor_beam6.enter5 {
+    transform: translate(153%, 0); /* Target position on screen */
     opacity: 1;
     transition: transform 4s ease, opacity 4s ease; /* Smooth transition */
 }
 
 /* Apply animation class when button is clicked */
-.tractor_beam2.enter6 {
-    transform: translate(194%, 0); /* Target position on screen */
+.tractor_beam6.enter6 {
+    transform: translate(192%, 0); /* Target position on screen */
     opacity: 1;
     transition: transform 4s ease, opacity 4s ease; /* Smooth transition */
 }
 
 /* Neon beam animation with falling effect */
-.tractor_beam2.beam-active::after {
+.tractor_beam6.beam-active::after {
     content: "";
     position: absolute;
     width: 100px; /* Beam width */
@@ -76,6 +76,7 @@
     box-shadow: 0 0 40px rgb(0, 255, 255), 
                 0 0 60px rgba(0, 255, 255, 0.9),
                 0 0 100px rgba(0, 255, 255, 0.806);
+
     animation: beamFall 1s ease forwards; /* Falling effect animation */
     transform-origin: top; /* Start scale animation from the top */
     transform: scaleY(0); /* Start from zero height */
@@ -92,49 +93,86 @@
 }
 
 /* Move spaceship to the right */
-.tractor_beam2.move-right {
+.tractor_beam6.move-right {
     transform: translateX(100vw); /* Moves spaceship off the screen to the right */
     opacity: 0;
     transition: transform 4s ease-out, 1.5s opacity ease-in;
 }
 
 /* Disable the beam animation once the sample moves */
-.tractor_beam2.remove-beam::after {
+.tractor_beam6.remove-beam::after {
     animation: none; /* Disable the beam animation */
 }
 
 /* Animation to move .cards upwards */
-#card1.move-up {
+#Animecard1.move-up {
     transform: translateY(-210px); /* Moves .sample upwards */
     opacity: 0; /* Fades out after 3 seconds */
     transition: 3s opacity ease, 2.5s transform ease-in;
 }
 
-#card2.move-up {
+#Animecard2.move-up {
     transform: translateY(-210px); /* Moves .sample upwards */
     opacity: 0; /* Fades out after 3 seconds */
     transition: 3s opacity ease, 2.5s transform ease-in;
 }
 
-#card3.move-up {
+#Animecard3.move-up {
     transform: translateY(-210px); /* Moves .sample upwards */
     opacity: 0; /* Fades out after 3 seconds */
     transition: 3s opacity ease, 2.5s transform ease-in;
 }
 
-#card4.move-up {
+#Animecard4.move-up {
     transform: translateY(-210px); /* Moves .sample upwards */
     opacity: 0; /* Fades out after 3 seconds */
     transition: 3s opacity ease, 2.5s transform ease-in;
 }
 
-#card5.move-up {
+#Animecard5.move-up {
     transform: translateY(-210px); /* Moves .sample upwards */
     opacity: 0; /* Fades out after 3 seconds */
     transition: 3s opacity ease, 2.5s transform ease-in;
 }
 
-#card6.move-up {
+#Animecard6.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+/* Animation to move .cards upwards */
+#Animecard7.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#Animecard8.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#Animecard9.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#Animecard10.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#Animecard11.move-up {
+    transform: translateY(-210px); /* Moves .sample upwards */
+    opacity: 0; /* Fades out after 3 seconds */
+    transition: 3s opacity ease, 2.5s transform ease-in;
+}
+
+#Animecard12.move-up {
     transform: translateY(-210px); /* Moves .sample upwards */
     opacity: 0; /* Fades out after 3 seconds */
     transition: 3s opacity ease, 2.5s transform ease-in;

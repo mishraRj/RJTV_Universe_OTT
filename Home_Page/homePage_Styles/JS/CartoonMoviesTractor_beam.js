@@ -20,6 +20,9 @@ function callCartoonMoviesSpaceship1() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship9.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
                 
 
             }, 2500); // Time for sample to fully move up
@@ -50,6 +53,9 @@ function callCartoonMoviesSpaceship2() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship9.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
             }, 2500); // Time for sample to fully move up
         }, 1000); // 1s delay to start .sample moving up after beam appears
     }, 4000); // Matches the 4s transition time for spaceship appearance
@@ -76,6 +82,9 @@ function callCartoonMoviesSpaceship3() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship9.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
                 
 
             }, 2500); // Time for sample to fully move up
@@ -106,6 +115,9 @@ function callCartoonMoviesSpaceship4() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship9.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
                 
 
             }, 2500); // Time for sample to fully move up
@@ -136,6 +148,9 @@ function callCartoonMoviesSpaceship5() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship9.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
                 
 
             }, 2500); // Time for sample to fully move up
@@ -166,6 +181,9 @@ function callCartoonMoviesSpaceship6() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship9.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
                 
 
             }, 2500); // Time for sample to fully move up
@@ -196,6 +214,9 @@ function callCartoonMoviesSpaceship7() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship9.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
                 
 
             }, 2500); // Time for sample to fully move up
@@ -226,6 +247,9 @@ function callCartoonMoviesSpaceship8() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship9.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
             }, 2500); // Time for sample to fully move up
         }, 1000); // 1s delay to start .sample moving up after beam appears
     }, 4000); // Matches the 4s transition time for spaceship appearance
@@ -252,6 +276,9 @@ function callCartoonMoviesSpaceship9() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship9.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
                 
 
             }, 2500); // Time for sample to fully move up
@@ -282,6 +309,9 @@ function callCartoonMoviesSpaceship10() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship9.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
                 
 
             }, 2500); // Time for sample to fully move up
@@ -312,6 +342,9 @@ function callCartoonMoviesSpaceship11() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship9.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
                 
 
             }, 2500); // Time for sample to fully move up
@@ -342,6 +375,9 @@ function callCartoonMoviesSpaceship12() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship9.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
                 
 
             }, 2500); // Time for sample to fully move up

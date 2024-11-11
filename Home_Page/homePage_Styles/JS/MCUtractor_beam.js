@@ -22,7 +22,9 @@ function callMCUSpaceship1() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship5.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -52,6 +54,9 @@ function callMCUSpaceship2() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship5.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
             }, 2500); // Time for sample to fully move up
         }, 1000); // 1s delay to start .sample moving up after beam appears
     }, 4000); // Matches the 4s transition time for spaceship appearance
@@ -78,7 +83,9 @@ function callMCUSpaceship3() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship5.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -108,7 +115,9 @@ function callMCUSpaceship4() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship5.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -138,7 +147,9 @@ function callMCUSpaceship5() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship5.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -168,8 +179,9 @@ function callMCUSpaceship6() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship5.classList.add('move-right');
-                
-
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
             }, 2500); // Time for sample to fully move up
 
         }, 1000); // 1s delay to start .sample moving up after beam appears
@@ -199,7 +211,9 @@ function callMCUSpaceship7() {
                 // After .sample has moved up, move spaceship to the right
                     spaceship5.classList.add('move-right');
                 
-
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
             }, 2500); // Time for sample to fully move up
 
         }, 1000); // 1s delay to start .sample moving up after beam appears
@@ -228,6 +242,9 @@ function callMCUSpaceship8() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship5.classList.add('move-right');
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
             }, 2500); // Time for sample to fully move up
         }, 1000); // 1s delay to start .sample moving up after beam appears
     }, 4000); // Matches the 4s transition time for spaceship appearance
@@ -254,7 +271,9 @@ function callMCUSpaceship9() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship5.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -284,7 +303,9 @@ function callMCUSpaceship10() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship5.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -314,7 +335,9 @@ function callMCUSpaceship11() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship5.classList.add('move-right');
-                
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
 
             }, 2500); // Time for sample to fully move up
 
@@ -344,8 +367,9 @@ function callMCUSpaceship12() {
                 
                 // After .sample has moved up, move spaceship to the right
                     spaceship5.classList.add('move-right');
-                
-
+                    setTimeout(() =>{
+                        window.location.href = './construction.html';
+                    }, 1500)
             }, 2500); // Time for sample to fully move up
 
         }, 1000); // 1s delay to start .sample moving up after beam appears

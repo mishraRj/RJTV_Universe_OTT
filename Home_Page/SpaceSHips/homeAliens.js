@@ -46,7 +46,7 @@ for (let i = 0; i < images.length; i++) {
         img.style.height = "250px";
         img.style.opacity = "0.3";
     } else {
-        let randomSize = `${Math.random() * 80 + 60}px`
+        let randomSize = `${Math.random() * 65 + 55}px`
         img.style.width = randomSize; // Default size for other spaceships
         img.style.height = randomSize;
     }

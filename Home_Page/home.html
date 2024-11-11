@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="./homePage_Styles/CSS/tractor_beam.css">
     <link rel="stylesheet" href="./homePage_Styles/CSS/CStractor_beam.css">
     <link rel="stylesheet" href="./homePage_Styles/CSS/HrTractor_beam.css">
+    <link rel="stylesheet" href="./homePage_Styles/CSS/MCUtractor_beam.css">
+    <link rel="stylesheet" href="./homePage_Styles/CSS/Animetractor_beam.css">
+    <link rel="stylesheet" href="./homePage_Styles/CSS/dhramicTractor_beam.css">
+    <link rel="stylesheet" href="./homePage_Styles/CSS/CartoonsTractor_beam.css">
+    <link rel="stylesheet" href="./homePage_Styles/CSS/CartoonMoviesTractor_beam.css">
 
 
     <!-- Favicon -->
@@ -785,59 +790,139 @@
                 <i class="fa-solid hrLeft fa-circle-arrow-left slider-icons"></i>
             </div>
 
+            <!-- Avengers BGM-->
+            <audio id="avngrsBGM">
+                <source src="./SpaceSHips/avngrsBgm.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
             <br><br><br>
             <h2>Marvel Cinematic Universe</h2>
             <a href="#"><h5>...view all...</h5></a>
             <br>
             <div class="posters lazy-item">
+                <div class="tractor_beam5">
+                    <img src="./SpaceSHips/avengersSpacehip.png" alt="NewSpaceship">
+                </div>
                 <i class="fa-solid MCUright fa-circle-arrow-right slider-icons"></i>
-                    <div class="card MCUcard1" id="card1">
+                    <div class="card MCUcard1" id="MCUcard1">
                         <img src="./Cards/Marvel_Cards/Wolverine.webp" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                        class="btn btn-secondary"
+                        id = "Cards_Watch_Btn" 
+                        type="button"
+                        onclick="callMCUSpaceship1()">
+                        Watch now
+                    </button>
                     </div>
-                    <div class="card MCUcard2" id="card2">
+                    <div class="card MCUcard2" id="MCUcard2">
                         <img src="./Cards/Marvel_Cards/DS1.webp" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                        class="btn btn-secondary"
+                        id = "Cards_Watch_Btn" 
+                        type="button"
+                        onclick="callMCUSpaceship2()">
+                        Watch now
+                    </button>
                     </div>
-                    <div class="card MCUcard3" id="card3">
+                    <div class="card MCUcard3" id="MCUcard3">
                         <img src="./Cards/Marvel_Cards/BlackPanther.png" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                        class="btn btn-secondary"
+                        id = "Cards_Watch_Btn" 
+                        type="button"
+                        onclick="callMCUSpaceship3()">
+                        Watch now
+                    </button>
                     </div>
-                    <div class="card MCUcard4" id="card4">
+                    <div class="card MCUcard4" id="MCUcard4">
                         <img src="./Cards/Marvel_Cards/Avngrs.webp" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                        class="btn btn-secondary"
+                        id = "Cards_Watch_Btn" 
+                        type="button"
+                        onclick="callMCUSpaceship4()">
+                        Watch now
+                    </button>
                     </div>
-                    <div class="card MCUcard5" id="card5">
+                    <div class="card MCUcard5" id="MCUcard5">
                         <img src="./Cards/Marvel_Cards/ShangChi.png" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                        class="btn btn-secondary"
+                        id = "Cards_Watch_Btn" 
+                        type="button"
+                        onclick="callMCUSpaceship5()">
+                        Watch now
+                    </button>
                     </div>
-                    <div class="card MCUcard6" id="card6">
+                    <div class="card MCUcard6" id="MCUcard6">
                         <img src="./Cards/Marvel_Cards/AvengersEnd.png" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                        class="btn btn-secondary"
+                        id = "Cards_Watch_Btn" 
+                        type="button"
+                        onclick="callMCUSpaceship6()">
+                        Watch now
+                    </button>
                     </div>
-                    <div class="card MCUcard7" id="card7">
+                    <div class="card MCUcard7" id="MCUcard7">
                         <img src="./Cards/Marvel_Cards/MoonKnight.png" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                        class="btn btn-secondary"
+                        id = "Cards_Watch_Btn" 
+                        type="button"
+                        onclick="callMCUSpaceship7()">
+                        Watch now
+                    </button>
                     </div>
-                    <div class="card MCUcard8" id="card8">
+                    <div class="card MCUcard8" id="MCUcard8">
                         <img src="./Cards/Marvel_Cards/ThorRag.png" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                        class="btn btn-secondary"
+                        id = "Cards_Watch_Btn" 
+                        type="button"
+                        onclick="callMCUSpaceship8()">
+                        Watch now
+                    </button>
                     </div>
-                    <div class="card MCUcard9" id="card9">
+                    <div class="card MCUcard9" id="MCUcard9">
                         <img src="./Cards/Marvel_Cards/Loki.png" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                        class="btn btn-secondary"
+                        id = "Cards_Watch_Btn" 
+                        type="button"
+                        onclick="callMCUSpaceship9()">
+                        Watch now
+                    </button>
                     </div>
-                    <div class="card MCUcard10" id="card10">
+                    <div class="card MCUcard10" id="MCUcard10">
                         <img src="./Cards/Marvel_Cards/ironMan2.webp" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                        class="btn btn-secondary"
+                        id = "Cards_Watch_Btn" 
+                        type="button"
+                        onclick="callMCUSpaceship10()">
+                        Watch now
+                    </button>
                     </div>
-                    <div class="card MCUcard11" id="card11">
+                    <div class="card MCUcard11" id="MCUcard11">
                         <img src="./Cards/Marvel_Cards/CW.webp" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                        class="btn btn-secondary"
+                        id = "Cards_Watch_Btn" 
+                        type="button"
+                        onclick="callMCUSpaceship11()">
+                        Watch now
+                    </button>
                     </div>
-                    <div class="card MCUcard12" id="card12">
+                    <div class="card MCUcard12" id="MCUcard12">
                         <img src="./Cards/Marvel_Cards/AvngrsInfinityWar.webp" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                        class="btn btn-secondary"
+                        id = "Cards_Watch_Btn" 
+                        type="button"
+                        onclick="callMCUSpaceship12()">
+                        Watch now
+                    </button>
                     </div>
             <i class="fa-solid MCUleft fa-circle-arrow-left slider-icons"></i>
             </div>
@@ -847,54 +932,129 @@
             <a href="#"><h5>...view all...</h5></a>
             <br>
             <div class="posters lazy-item">
+                <div class="tractor_beam6">
+                    <img src="./SpaceSHips/Alien1.png" alt="NewSpaceship">
+                </div>
                 <i class="fa-solid animeRight fa-circle-arrow-right slider-icons"></i>
-                    <div class="card animeCard1" id="card1">
+                    <div class="card animeCard1" id="Animecard1">
                         <img src="./Cards/Anime_Cards/AOT.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callAnimeSpaceship1()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card animeCard2" id="card2">
+                    <div class="card animeCard2" id="Animecard2">
                         <img src="./Cards/Anime_Cards/DBZ.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callAnimeSpaceship2()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card animeCard3" id="card3">
+                    <div class="card animeCard3" id="Animecard3">
                         <img src="./Cards/Anime_Cards/DeathNote.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callAnimeSpaceship3()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card animeCard4" id="card4">
+                    <div class="card animeCard4" id="Animecard4">
                         <img src="./Cards/Anime_Cards/DemonSlayer.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callAnimeSpaceship4()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card animeCard5" id="card5">
+                    <div class="card animeCard5" id="Animecard5">
                         <img src="./Cards/Anime_Cards/Doraemon.png" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callAnimeSpaceship5()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card animeCard6" id="card6">
+                    <div class="card animeCard6" id="Animecard6">
                         <img src="./Cards/Anime_Cards/MHA.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callAnimeSpaceship6()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card animeCard7" id="card7">
+                    <div class="card animeCard7" id="Animecard7">
                         <img src="./Cards/Anime_Cards/MHA.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callAnimeSpaceship7()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card animeCard8" id="card8">
+                    <div class="card animeCard8" id="Animecard8">
                         <img src="./Cards/Anime_Cards/MyDressUpDar.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callAnimeSpaceship8()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card animeCard9" id="card9">
+                    <div class="card animeCard9" id="Animecard9">
                         <img src="./Cards/Anime_Cards/NarutoShippu.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callAnimeSpaceship9()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card animeCard10" id="card10">
+                    <div class="card animeCard10" id="Animecard10">
                         <img src="./Cards/Anime_Cards/OnePiece.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callAnimeSpaceship10()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card animeCard11" id="card11">
+                    <div class="card animeCard11" id="Animecard11">
                         <img src="./Cards/Anime_Cards/OnePunch Man.webp" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callAnimeSpaceship11()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card animeCard12" id="card12">
+                    <div class="card animeCard12" id="Animecard12">
                         <img src="./Cards/Anime_Cards/shinchan.webp" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callAnimeSpaceship12()">
+                            Watch now
+                        </button>
                     </div>
             <i class="fa-solid animeLeft fa-circle-arrow-left slider-icons"></i>
             </div>
@@ -904,29 +1064,68 @@
             <!-- <a href="#"><h5>...view all...</h5></a> -->
             <br>
             <div class="posters lazy-item" style="z-index: 5000;">
-                    <div class="card" id="card1" style="z-index: 5000;">
+                <div class="tractor_beam7">
+                    <img src="./SpaceSHips/Alien5.png" alt="NewSpaceship">
+                </div>
+                    <div class="card" id="Dharmiccard1" style="z-index: 5000;">
                         <img src="./Cards/Dharmic_Shows/Ramayan.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callDharmicSpaceship1()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card" id="card2" style="z-index: 5000;">
+                    <div class="card" id="Dharmiccard2" style="z-index: 5000;">
                         <img src="./Cards/Dharmic_Shows/Mahadev.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callDharmicSpaceship2()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card" id="card3" style="z-index: 5000;">
+                    <div class="card" id="Dharmiccard3" style="z-index: 5000;">
                         <img src="./Cards/Dharmic_Shows/Mahabharat.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callDharmicSpaceship3()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card" id="card4" style="z-index: 5000;">
+                    <div class="card" id="Dharmiccard4" style="z-index: 5000;">
                         <img src="./Cards/Dharmic_Shows/ShriKrishna.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callDharmicSpaceship4()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card" id="card5" style="z-index: 5000;">
+                    <div class="card" id="Dharmiccard5" style="z-index: 5000;">
                         <img src="./Cards/Dharmic_Shows/RadhaKrishn.jpeg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callDharmicSpaceship5()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card" id="card6" style="z-index: 5000;">
+                    <div class="card" id="Dharmiccard6" style="z-index: 5000;">
                         <img src="./Cards/Dharmic_Shows/BRmahabharat.jpeg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callDharmicSpaceship6()">
+                            Watch now
+                        </button>
                     </div>
             </div>
 
@@ -935,54 +1134,129 @@
             <a href="#"><h5>...view all...</h5></a>
             <br>
             <div class="posters lazy-item">
+                <div class="tractor_beam8">
+                    <img src="./SpaceSHips/Alien4.png" alt="NewSpaceship">
+                </div>
                 <i class="fa-solid cartoonRight fa-circle-arrow-right slider-icons"></i>
-                    <div class="card cartoonCard1" id="card1">
+                    <div class="card cartoonCard1" id="Cartoonscard1">
                         <img src="./Cards/Animated_Shows/adventureTime.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonsSpaceship1()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonCard2" id="card2">
+                    <div class="card cartoonCard2" id="Cartoonscard2">
                         <img src="./Cards/Animated_Shows/bean.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonsSpaceship2()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonCard3" id="card3">
+                    <div class="card cartoonCard3" id="Cartoonscard3">
                         <img src="./Cards/Animated_Shows/Ben10_Omni.png" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonsSpaceship3()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonCard4" id="card4">
+                    <div class="card cartoonCard4" id="Cartoonscard4">
                         <img src="./Cards/Animated_Shows/Chhota_Bheem.webp" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonsSpaceship4()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonCard5" id="card5">
+                    <div class="card cartoonCard5" id="Cartoonscard5">
                         <img src="./Cards/Animated_Shows/Courage.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonsSpaceship5()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonCard6" id="card6">
+                    <div class="card cartoonCard6" id="Cartoonscard6">
                         <img src="./Cards/Animated_Shows/Henry.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonsSpaceship6()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonCard7" id="card7">
+                    <div class="card cartoonCard7" id="Cartoonscard7">
                         <img src="./Cards/Animated_Shows/ben10AF.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonsSpaceship7()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonCard8" id="card8">
+                    <div class="card cartoonCard8" id="Cartoonscard8">
                         <img src="./Cards/Animated_Shows/KB.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonsSpaceship8()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonCard9" id="card9">
+                    <div class="card cartoonCard9" id="Cartoonscard9">
                         <img src="./Cards/Animated_Shows/MP.webp" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonsSpaceship9()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonCard10" id="card10">
+                    <div class="card cartoonCard10" id="Cartoonscard10">
                         <img src="./Cards/Animated_Shows/OggyandCockroaches.png" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonsSpaceship10()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonCard11" id="card11">
+                    <div class="card cartoonCard11" id="Cartoonscard11">
                         <img src="./Cards/Animated_Shows/shaun.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonsSpaceship11()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonCard12" id="card12">
+                    <div class="card cartoonCard12" id="Cartoonscard12">
                         <img src="./Cards/Animated_Shows/TomAndJerry.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonsSpaceship12()">
+                            Watch now
+                        </button>
                     </div>
             <i class="fa-solid cartoonLeft fa-circle-arrow-left slider-icons"></i>
             </div>
@@ -992,54 +1266,129 @@
             <a href="#"><h5>...view all...</h5></a>
             <br>
             <div class="posters lazy-item">
+                <div class="tractor_beam9">
+                    <img src="./SpaceSHips/Alien2.png" alt="NewSpaceship">
+                </div>
                 <i class="fa-solid cartoonMoviesRight fa-circle-arrow-right slider-icons"></i>
-                    <div class="card cartoonMoviesCard1" id="card1">
+                    <div class="card cartoonMoviesCard1" id="CartoonMoviescard1">
                         <img src="./Cards/Animated_Movies/balGanesh.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonMoviesSpaceship1()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonMoviesCard2" id="card2">
+                    <div class="card cartoonMoviesCard2" id="CartoonMoviescard2">
                         <img src="./Cards/Animated_Movies/bossBaby.webp" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonMoviesSpaceship2()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonMoviesCard3" id="card3">
+                    <div class="card cartoonMoviesCard3" id="CartoonMoviescard3">
                         <img src="./Cards/Animated_Movies/happyFeet.jpeg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonMoviesSpaceship3()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonMoviesCard4" id="card4">
+                    <div class="card cartoonMoviesCard4" id="CartoonMoviescard4">
                         <img src="./Cards/Animated_Movies/HTTYD.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonMoviesSpaceship4()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonMoviesCard5" id="card5">
+                    <div class="card cartoonMoviesCard5" id="CartoonMoviescard5">
                         <img src="./Cards/Animated_Movies/IceAge.jpeg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonMoviesSpaceship5()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonMoviesCard6" id="card6">
+                    <div class="card cartoonMoviesCard6" id="CartoonMoviescard6">
                         <img src="./Cards/Animated_Movies/jungleBook.jpeg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonMoviesSpaceship6()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonMoviesCard7" id="card7">
+                    <div class="card cartoonMoviesCard7" id="CartoonMoviescard7">
                         <img src="./Cards/Animated_Movies/KFP3.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonMoviesSpaceship7()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonMoviesCard8" id="card8">
+                    <div class="card cartoonMoviesCard8" id="CartoonMoviescard8">
                         <img src="./Cards/Animated_Movies/Megamind.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonMoviesSpaceship8()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonMoviesCard9" id="card9">
+                    <div class="card cartoonMoviesCard9" id="CartoonMoviescard9">
                         <img src="./Cards/Animated_Movies/Ratatouille.jpeg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonMoviesSpaceship9()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonMoviesCard10" id="card10">
+                    <div class="card cartoonMoviesCard10" id="CartoonMoviescard10">
                         <img src="./Cards/Animated_Movies/Rio.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonMoviesSpaceship10()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonMoviesCard11" id="card11">
+                    <div class="card cartoonMoviesCard11" id="CartoonMoviescard11">
                         <img src="./Cards/Animated_Movies/theCroods.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonMoviesSpaceship11()">
+                            Watch now
+                        </button>
                     </div>
-                    <div class="card cartoonMoviesCard12" id="card12">
+                    <div class="card cartoonMoviesCard12" id="CartoonMoviescard12">
                         <img src="./Cards/Animated_Movies/toyStory.jpg" alt="img">
-                        <button class="btn btn-secondary"id = "Cards_Watch_Btn" type="button">Watch now</button>
+                        <button 
+                            class="btn btn-secondary"
+                            id = "Cards_Watch_Btn" 
+                            type="button"
+                            onclick="callCartoonMoviesSpaceship12()">
+                            Watch now
+                        </button>
                     </div>
             <i class="fa-solid cartoonMoviesLeft fa-circle-arrow-left slider-icons"></i>
             </div>
@@ -1081,6 +1430,11 @@
         <script src="./homePage_Styles/JS/tractor_Beam.js"></script>
         <script src="./homePage_Styles/JS/CStractor_beam.js"></script>
         <script src="./homePage_Styles/JS/HrTractor_beam.js"></script>
+        <script src="./homePage_Styles/JS/MCUtractor_beam.js"></script>
+        <script src="./homePage_Styles/JS/Animetractor_beam.js"></script>
+        <script src="./homePage_Styles/JS/dhramicTractor_beam.js"></script>
+        <script src="./homePage_Styles/JS/CartoonsTractor_beam.js"></script>
+        <script src="./homePage_Styles/JS/CartoonMoviesTractor_beam.js"></script>
         <script src="app.js"></script>
 
         <!-- <script>

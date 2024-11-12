@@ -60,11 +60,12 @@ function callCSSpaceship2() {
 }
 
 function callCSSpaceship3() {
+    const bhblBgm = document.getElementById('bhoolBhulaiyaBGM');
     const sample = document.getElementById('CScard3');
     // Add 'enter' class to start spaceship animation
     spaceship2.classList.add('enter3');
 
-    bgm.play();
+    bhblBgm.play();
     
     // Delay adding 'beam-active' class and starting the beam animation
     setTimeout(() => {

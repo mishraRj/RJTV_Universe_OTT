@@ -1,47 +1,44 @@
 .spaceShip {
     position: absolute;
-    z-index: 10;
+    z-index: 10; /* Ensure visibility */
     animation: spaceShipMove 70s linear infinite;
-    z-index: -1;
 }
 
 @keyframes spaceShipMove {
     0% {
-        transform: translate(0, 0); /* Starting position */
+        transform: translate(0, 0);
     }
     25% {
-        transform: translate(100vw, 0); /* Move to the right */
+        transform: translate(100vw, 0);
     }
     30% {
-        transform: scaleX(-1); /* Start flipping */
-        transition: transform 0.002s; /* Add a quick transition for the flip */
+        transform: scaleX(-1);
     }
     50% {
-        transform: translate(-100vw, -30vh); /* Move to the left while moving down */
+        transform: translate(-100vw, -30vh);
     }
     55% {
-        transform: scaleX(1); /* Flip back to original */
+        transform: scaleX(1);
     }
     75% {
-        transform: translate(100vw, 30vh); /* Move right and down */
+        transform: translate(100vw, 30vh);
     }
     80% {
-        transform: scaleX(-1); /* Flip horizontally */
+        transform: scaleX(-1);
     }
     100% {
-        transform: translate(-90vw, -50vh); /* Final position */
+        transform: translate(-90vw, -50vh);
     }
 }
 
-
 .spaceShip img {
-    width: 65px;
-    height: 65px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 @media (max-width: 654px) {
     .spaceShip {
-        animation: none; /* Disable animation */
+        animation: none;
         display: none;
     }
 }

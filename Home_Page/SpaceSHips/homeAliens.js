@@ -1,3 +1,4 @@
+// Spaceship images
 const images = [
     './SpaceSHips/Alien1.png', 
     './SpaceSHips/Aestoroid1.png', 
@@ -17,37 +18,49 @@ const images = [
     './SpaceSHips/Aestoroid2.png',
     './SpaceSHips/Alien5.png', 
     './SpaceSHips/bigspaceShipAliens.png', 
-]; // Ensure paths are correct
+];
 
-// Get the total document height
+// Function to calculate document height reliably
+const calculateDocumentHeight = () => {
+    return Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.offsetHeight,
+        window.innerHeight
+    );
+};
 
-const documentHeight = document.body.scrollHeight - 400;
+// Calculate the document height dynamically
+const documentHeight = calculateDocumentHeight() - 400; // Adjust for spaceship positioning
+console.log('Document Height:', documentHeight);
 
+// Generate and position spaceships
 for (let i = 0; i < images.length; i++) {
-    let spaceShip = document.createElement('div');
+    const spaceShip = document.createElement('div');
     spaceShip.classList.add('spaceShip');
 
-    // Set random horizontal position (within 100% width)
-    spaceShip.style.left = `${Math.random() * 100}vw`; 
+    // Set random positions
+    spaceShip.style.left = `${Math.random() * 100}vw`; // Horizontal position
+    spaceShip.style.top = `${Math.random() * documentHeight}px`; // Vertical position
 
-    // Set random vertical position (within the total document height)
-    spaceShip.style.top = `${Math.random() * documentHeight}px`; // Use total document height
+    // Set random animation duration
+    spaceShip.style.animationDuration = `${Math.random() * 70 + 60}s`; // Random animation speed
 
-    // Random animation duration to make each spaceship unique
-    spaceShip.style.animationDuration = `${Math.random() * 70 + 60}s`; // Adjusted speed
+    // Create an image element and assign a random source
+    const img = document.createElement('img');
+    img.src = images[i];
 
-    // Create an image element and assign random src
-    let img = document.createElement('img');
-    img.src = images[i]; // Cycle through images
-
-    // For the last two spaceships, set a larger size
+    // Size adjustments
     if (i >= images.length - 2) {
-        img.style.width = "250px"; // Larger size for the last two spaceships
+        // Larger size for last two spaceships
+        img.style.width = "250px";
         img.style.height = "250px";
         img.style.opacity = "0.3";
     } else {
-        let randomSize = `${Math.random() * 65 + 55}px`
-        img.style.width = randomSize; // Default size for other spaceships
+        // Random size for other spaceships
+        const randomSize = `${Math.random() * 65 + 55}px`;
+        img.style.width = randomSize;
         img.style.height = randomSize;
     }
 
@@ -57,3 +70,6 @@ for (let i = 0; i < images.length; i++) {
     // Append the spaceship div to the body
     document.body.appendChild(spaceShip);
 }
+
+// Debugging: Log the number of spaceships created
+console.log('Spaceships added to the DOM:', document.querySelectorAll('.spaceShip').length);

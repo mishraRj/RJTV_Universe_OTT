@@ -1,4 +1,5 @@
 body {
+    min-height: 100%;
     background-color: black;
     background-image: url('./Welcome_Imgs/Universe.jpg');
     background-size: contain; /* Ensures the background image covers the entire body */

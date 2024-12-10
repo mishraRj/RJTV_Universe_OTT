@@ -23,7 +23,7 @@ btn.addEventListener('click', () => {
     const mainContent = document.querySelector('.main-content');
     if (mainContent) {
         mainContent.style.backgroundImage = "url('./Cards/horror_Movies/image2.png')";
-        mainContent.style.transition = "background-image 1s ease"; // Smooth transition
+        mainContent.style.transition = "background-image 5s ease-in"; // Smooth transition
     }
 
     // Set a timeout to redirect after 22 seconds

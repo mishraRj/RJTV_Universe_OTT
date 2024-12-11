@@ -1,7 +1,7 @@
 body {
-    min-height: 100%;
+    height: 100%;
     background-color: black;
-    background-image: url('./Welcome_Imgs/Universe.jpg');
+    background-image: url('./Welcome_Imgs/Universe.jpg') !important;
     background-size: contain; /* Ensures the background image covers the entire body */
     background-position: center;
     margin: 0; /* Remove default body margin */

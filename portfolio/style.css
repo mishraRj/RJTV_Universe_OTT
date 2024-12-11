@@ -42,8 +42,8 @@ body{
     opacity: 0;
     flex-wrap: wrap;
     background-color: #121212;
-    background-image: url('./images/portUniverse.png'); /* Adjust the path if necessary */
-    background-size: initial;
+    background-image: url('./images/poc.jpg'); /* Adjust the path if necessary */
+    background-size: contain;
     z-index: -10;
     overflow-x: hidden;
     transition: background-image 8s ease-in-out, opacity 1s ease-in-out; /* Smooth transition */

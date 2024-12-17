@@ -214,3 +214,10 @@ let lazyObserver = new IntersectionObserver((entries, observer) => {
 
 // Observe each lazy-item
 lazyItems.forEach(item => lazyObserver.observe(item));
+
+window.onpageshow = function (event) {
+    if (event.persisted) {
+        // Reload the page if it was loaded from the cache
+        window.location.reload();
+    }
+};

@@ -76,7 +76,7 @@ p{
 h2{
     color: white;
     text-align: center;
-    z-index: -5;
+    z-index: 50;
 }
 
 #name {
